@@ -1,1 +1,2 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';

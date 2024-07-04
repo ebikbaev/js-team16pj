@@ -31,12 +31,12 @@
   --maint-text: FAFAFA;
   --gray: #3b3b3b;
 }
+
 .container {
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 auto;
-  background-color: var(--bgc);
 }
 @media screen and (min-width: 375px) {
   .container {
