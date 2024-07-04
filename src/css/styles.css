@@ -15,18 +15,47 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 
+@font-face {
+  font-family: Inter Tight;
+  src: url(../../fonts/InterTight-Medium.ttf);
+}
+@font-face {
+  font-family: Inter Tight;
+  src: url(../../fonts/InterTight-SemiBold.ttf);
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --bgc: #1c1d20;
+  --cards: #242527;
+  --btn-text: #ed3b44;
+  --maint-text: FAFAFA;
+  --gray: #3b3b3b;
+}
+.container {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+  background-color: var(--bgc);
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
