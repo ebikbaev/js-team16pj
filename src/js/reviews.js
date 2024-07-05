@@ -1,5 +1,6 @@
 'use strict';
-
+// import iziToast from 'izitoast';
+// import 'izitoast/dist/css/iziToast.min.css';
 import { swiperActivate } from './reviews-sw';
 import { fetchData } from './reviews-api';
 import { reviewsTemplate } from './reviews-render';
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const markup = reviewsTemplate(data);
     gallery.innerHTML = markup;
     swiperActivate();
+    
   } catch {
     gallery.innerHTML = `<p class = "alert">Not found</p>`;
   }
