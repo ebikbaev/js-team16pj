@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     swiperActivate();
     
   } catch {
+    iziToast.show('Server Error!');
     gallery.innerHTML = `<p class = "alert">Not found</p>`;
   }
 });
