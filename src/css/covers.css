@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+body {
+    margin: 0 auto;
+}
+
+.covers-visually-hidden {
+position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.covers-section{
+    margin: 0 auto;
+    background-color: var(--bgc);
+}
+
+.covers-section-container{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(30px); */
+    
+}
+.covers-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 217, 217, 0.04);
+    backdrop-filter: blur(30px);
+
+}
+/* ===========================MOBILE======================== */
+@media screen and (max-width:767px) {
+    .covers-section{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        max-width: 375px;
+    }
+
+    .covers-section-container{
+        max-width: 100%;
+        height: 508px;
+        background-image:  url(../img/covers-section/covers-bg-imd-mob-1x.png);
+        
+    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .covers-section-container {
+                background-image: url(../img/covers-section/covers-bg-imd-mob-2x.png);
+            }
+        }
+}
+
+/* ===========================TABLET======================== */
+@media screen and (min-width:768px) and (max-width:1439px) {
+    .covers-section{
+        padding-top: 48px;
+        padding-bottom: 48px;
+        max-width: 768px;
+    }
+    .covers-section-container {
+        max-width: 100%;
+        height: 960px;
+        background-image: url(../img/covers-section/covers-bg-imd-tab-1x.png);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .covers-section-container {
+                background-image: url(../img/covers-section/covers-bg-imd-tab-2x.png);
+            }
+        }
+        
+}
+
+
+/* ===========================DESKTOP======================== */
+@media screen and (min-width: 1440px) {
+    .covers-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+        max-width: 1440px;
+       
+    }
+    
+
+    .covers-section-container {
+        max-width: 100%;
+        height: 960px;
+        background-image: url(../img/covers-section/covers-bg-img-desc-1x.png);
+        
+    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .covers-section-container{
+                background-image: url(../img/covers-section/covers-bg-imd-desk-2x.png);
+            }
+        }
+    
+}
+
+
+
+
+.covers-section{
+
+}
+
+.covers-section-title{
+
+}
+
