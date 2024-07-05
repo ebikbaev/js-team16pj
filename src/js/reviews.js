@@ -2,7 +2,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import Axios from 'axios';
-const gallery = document.querySelector('.swiper-wraper');
+const gallery = document.querySelector('.swiper-reviews .swiper-wrapper');
 // const nextButton = document.querySelector('.next-button');
 // const prevButton = document.querySelector('.prev-button');
 
@@ -35,23 +35,38 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await fetchData()
     const markup = reviewsTemplate(data)
     gallery.innerHTML = markup;
+
+    const swiper = new Swiper('.swiper-reviews', {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1280: {
+          slidesPerView: 4,
+        },
+      },
+      
+      simulateTouch: 'true',
+      roundLengths:'true',
+      keyboard: {
+        enabled: true,
+      },
+      // mousewheel: {
+      //   invert: false,
+      // },
+      navigation: {
+        nextEl: '.prev-button',
+        prevEl: '.next-button',
+      },
+    });
+
   }
   catch {
     gallery.innerHTML = `<p class = "alert">Not found</p>`;
   }
 });
 
-// const swiper = new Swiper('.swiper-reviews', {
-//   direction: 'horizontal',
-//   slidesPerView: 4,
-//   spaceBetween: 16,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   navigation: {
-//     nextEl: '.next-button',
-//     prevEl: '.prev-button',
-//   },
-// });
 
 
