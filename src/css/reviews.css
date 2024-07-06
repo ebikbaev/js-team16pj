@@ -1,9 +1,6 @@
 
 
 .reviews {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   padding-top: 164px;
   padding-bottom: 164px;
   background-color: var(--bgc);
@@ -12,9 +9,6 @@
 
 .swiper-reviews {
   overflow: hidden;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 .reviews-header {
   margin-top: 0;
@@ -26,13 +20,8 @@
 color: #FAFAFA;
 }
 
-.swiper {
-}
 .reviewers-list.swiper-wrapper {
   margin-bottom: 32px;
-  
-  /* display: flex;
-  justify-content: center; */
 }
 
 .alert {
@@ -47,10 +36,8 @@ color: #FAFAFA;
   
 }
 .swiper-slide.reviewers-card {
-  border: 1px;
-  border-style: solid;
+  border: 1px solid #E0E0E0;
   border-radius: 20px;
-  border-color: #E0E0E0;
   padding: 32px 24px;
   width: 332px;
   height: 352px;
@@ -85,28 +72,24 @@ color: #FAFAFA;
   gap: 20px;
 }
 .reviews-button{
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 68px;
   height: 68px;
-  border: 1px;
-  border-style: solid;
-  border-radius: 100%;
-  border-color: #E0E0E0;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
 }
 
-/* .button-inactive {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 68px;
-  height: 68px;
-  border: 1px;
-  border-style: solid;
-  border-radius: 100%;
+.button-inactive {
+  cursor: default;
   border-color: #3b3b3b;
-  } */
+  fill: #3b3b3b;
+  stroke: #3b3b3b;
+  }
 
 
 

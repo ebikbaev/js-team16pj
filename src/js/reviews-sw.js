@@ -25,8 +25,39 @@ export function swiperActivate() {
     //   invert: false,
     // },
     navigation: {
-      nextEl: '.prev-button',
-      prevEl: '.next-button',
+      nextEl: '.next-button',
+      prevEl: '.prev-button',
+    },
+    on: {
+      init: function () {
+        updateNavigationButtons(this);
+      },
+      slideChange: function () {
+        updateNavigationButtons(this);
+      },
+      reachEnd: function () {
+        updateNavigationButtons(this);
+      },
+      reachBeginning: function () {
+        updateNavigationButtons(this);
+      },
     },
   });
+
+  function updateNavigationButtons(swiper) {
+    const nextButton = document.querySelector('.next-button');
+    const prevButton = document.querySelector('.prev-button');
+
+    if (swiper.isBeginning) {
+      prevButton.classList.add('button-inactive');
+    } else {
+      prevButton.classList.remove('button-inactive');
+    }
+
+    if (swiper.isEnd) {
+      nextButton.classList.add('button-inactive');
+    } else {
+      nextButton.classList.remove('button-inactive');
+    }
+  }
 }
