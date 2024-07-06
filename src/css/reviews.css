@@ -1,5 +1,4 @@
 
-
 .reviews {
   padding-top: 164px;
   padding-bottom: 164px;
@@ -84,12 +83,14 @@ color: #FAFAFA;
   stroke: #E0E0E0;
 }
 
-.button-inactive {
+.button-inactive{
   cursor: default;
   border-color: #3b3b3b;
   fill: #3b3b3b;
   stroke: #3b3b3b;
   }
+
+
 
 
 
