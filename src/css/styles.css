@@ -16,12 +16,17 @@
 @import url('./work-together.css');
 
 @font-face {
-  font-family: Inter Tight;
-  src: url(../../fonts/InterTight-Medium.ttf);
+  font-family: 'InterTightMedium';
+  src: url('../../fonts/InterTight-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: Inter Tight;
-  src: url(../../fonts/InterTight-SemiBold.ttf);
+  font-family: 'InterTight';
+  src: url('../../fonts/InterTight-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 :root {
@@ -31,7 +36,9 @@
   --maint-text: FAFAFA;
   --gray: #3b3b3b;
 }
-
+.body {
+  font-family: 'InterTight', sans-serif;
+}
 .container {
   width: 100%;
   padding-left: 5px;
@@ -52,9 +59,9 @@
     padding-right: 32px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     padding-left: 32px;
     padding-right: 32px;
   }
