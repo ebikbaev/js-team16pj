@@ -17,8 +17,10 @@
   "dependencies": {
     "accordion-js": "^3.3.4",
     "axios": "^1.7.2",
+    "install": "^0.13.0",
     "izitoast": "^1.4.0",
     "modern-normalize": "^2.0.0",
+    "npm": "^10.8.1",
     "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.1.0",
     "vite-plugin-html-inject": "^1.0.1"
