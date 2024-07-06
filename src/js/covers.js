@@ -1,6 +1,5 @@
 const coversListItemAllEl = document.querySelectorAll('.covers-list-item');
 // console.log(coversListItemAllEl);
-
 const className = 'marqueeLine-style';
 
 const intersectionObserver = new IntersectionObserver((entries) => {
@@ -15,7 +14,6 @@ const intersectionObserver = new IntersectionObserver((entries) => {
 });
 
 intersectionObserver.observe(document.querySelector(".covers-section"));
-
 
 function removeMarqueeLineStyle(arr) {
     for (let i = 0; i < arr.length; i++)
