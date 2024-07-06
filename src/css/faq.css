@@ -89,11 +89,11 @@ color: rgba(250, 250, 250, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     gap: 10px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 100px;
-    padding: 7px;
+    padding: 7px ;
     width: 34px;
     height: 34px;
     position: absolute;
@@ -101,13 +101,14 @@ color: rgba(250, 250, 250, 0.4);
     right: 10px; 
                 cursor: pointer;
                 background-color: transparent;
+               
             }
             
             /* Стилі для стрілки на кнопці */
             .toggle-button svg {
                 width: 20px;
                 height: 20px;
-                fill: #ffffff;
+                fill: #fafafa;
             }
         
         
@@ -150,6 +151,10 @@ color: rgba(250, 250, 250, 0.4);
             
             .faq-column {
                 width: 100%; 
+            }
+            .toggle-button{
+                
+               
             }
         }
         
@@ -200,7 +205,7 @@ color: rgba(250, 250, 250, 0.4);
             top: 0;
             bottom: 0; 
             left: 50%;
-            stransform: translateX(-1px);
+            transform: translateX(-1px);
         }
         
         
