@@ -112,6 +112,10 @@
     border-radius: 0 0 24px 24px;
     background-color: #242527;
   }
+
+  .projects-img {
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
