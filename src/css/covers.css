@@ -50,10 +50,11 @@ position: absolute;
 }
 
 .covers-section-container{
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* backdrop-filter: blur(30px); */
+    
     
 }
 .covers-backdrop {
@@ -74,9 +75,6 @@ position: absolute;
     overflow: hidden;
 }
 
-.rotate-box {
-    
-}
 .covers-list {
     position: absolute;
     right: -800px;
@@ -89,6 +87,8 @@ position: absolute;
     /* max-width: 2920px; */
     max-height: 100%;
     margin: 0 auto;
+    max-width: 100%;
+
     
 
 }
@@ -97,6 +97,7 @@ position: absolute;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+
     
 }
 .covers-gallery-list {
@@ -105,18 +106,46 @@ position: absolute;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 60px;
-
-    /* width: calc(544px*5 + 50px*4); */
     transform: rotate(16deg);
     
 }
+/* .covers-list-item{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} */
+.marqueeLine-style {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
 
-.covers-list-item {
-    
+    to {
+        transform: translateX(-180%);
+    }
 }
 
 
+
 /* ===========================MOBILE======================== */
+
+
 @media screen and (max-width:767px) {
     .covers-section{
         padding-top: 32px;
@@ -126,7 +155,6 @@ position: absolute;
 
     .covers-section-container{
         max-width: 100%;
-        /* height: 100vh; */
         height: 508px;
         background-image:  url(../img/covers-section/covers-bg-imd-mob-1x.png);
         
@@ -155,7 +183,6 @@ position: absolute;
     }
     .covers-section-container {
         max-width: 100%;
-        /* height: 100vh; */
         height: 960px;
         background-image: url(../img/covers-section/covers-bg-imd-tab-1x.png);
     }
