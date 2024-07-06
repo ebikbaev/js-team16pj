@@ -11,7 +11,7 @@ export function swiperActivate() {
       768: {
         slidesPerView: 2,
       },
-      1280: {
+      1440: {
         slidesPerView: 4,
       },
     },
