@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-.faq-section {
+.section {
     width: 100%; 
     background: #1c1d20;
     padding: 56px 16px 0; 
@@ -32,16 +32,13 @@ line-height: 1.5;
 letter-spacing: -0.02em;
 color: rgba(250, 250, 250, 0.4);
 }
-.faq-section .faq-columns {
+.faq-columns {
     display: flex;
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    flex-direction: column;  
-    width: 100%;
-    height: auto; 
-    margin-top: -56px; 
+    flex-direction: column;
+    gap:32px;
+
 }
-.fag-column {
+.faq-column {
     width: 100%;
 }
 .faq-item {
@@ -64,6 +61,7 @@ color: rgba(250, 250, 250, 0.4);
     justify-content: space-between;
     align-items: center;
     position: relative;
+    word-wrap: break-word;
 }
 
 .faq-answer {
@@ -102,28 +100,31 @@ color: rgba(250, 250, 250, 0.4);
     top: 10px; 
     right: 10px; 
                 cursor: pointer;
+                background-color: transparent;
             }
             
             /* Стилі для стрілки на кнопці */
             .toggle-button svg {
                 width: 20px;
                 height: 20px;
+                fill: #ffffff;
             }
         
         
         /* Стилі для планшетної версії (768px - 1439px) */
         @media (min-width: 768px) and (max-width: 1439px) {
-            .faq-section {
+            .section {
                 width: 704px; 
                 height: 964px; 
                 padding: 82px 32px 0; 
                 gap: 32px; 
             }
             
-            .faq-section .faq-columns {
+            .faq-columns {
                 gap: 32px; 
-                height: 908px; 
-                margin-top: -56px; 
+                height: auto; 
+                margin-top: -56px;
+                flex-direction: column;
             }
             
             .faq-question {
@@ -136,36 +137,43 @@ color: rgba(250, 250, 250, 0.4);
                 margin-bottom: 24px; 
             }
              .horizontal-line {
-                display: none; 
+                width: 100%; 
+                height: 2px;
+                background-color:rgba(250, 250, 250, 0.2);
+                margin-bottom: 20px;
             }
             
             .faq-columns {
-                flex-direction: row; 
+                flex-direction: column; 
             }
             
             
             .faq-column {
-                width: 50%; 
+                width: 100%; 
             }
         }
         
         /* Стилі для десктопної версії (1440px і більше) */
         @media (min-width: 1440px) {
-            .faq-section {
+            .section {
                 width: 1440px; 
-                height: 640px;
-                padding: 82px 32px 0;
+                height: auto;
+            
                 padding: 0px 32px;
             }
 
-.faq-section .faq-columns {
-            gap: 32px; 
-            height: auto; 
-            margin-top: 0; 
+.faq-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        .faq-column {
+            flex: initial;
         }
         
         .faq-question {
             font-size: 20px; 
+            
         }
         
         .faq-answer {
@@ -177,28 +185,28 @@ color: rgba(250, 250, 250, 0.4);
         .horizontal-line {
             stroke-width: 1px;
             stroke: rgba(250, 250, 250, 0.2); 
+            width: 100%;
+            height: 2px;
+            margin-bottom: 20px;
         }
+
         
         .middle-line {
             display: block; 
             width: 2px;
-            height: 584;
+            height: auto;
             background-color: rgba(250, 250, 250, 0.2);
-            stroke-width: 1px;
-stroke: rgba(250, 250, 250, 0.2);
-position: absolute;
-top: 0;
- bottom: 0;
- left: 50%;
- transform: translateX(-1px);
+            position: absolute;
+            top: 0;
+            bottom: 0; 
+            left: 50%;
+            stransform: translateX(-1px);
         }
         
-        .faq-columns {
-            flex-direction: column; 
-        }
+        
         
         .faq-column {
-            width: 50%; 
+            flex: 1; 
         }
     }
     
