@@ -27,8 +27,7 @@ body {
     display: flex;
     align-items: flex-start; 
     justify-content: flex-start; 
-    flex-direction: column; 
-    gap: 20px; 
+    flex-direction: column;  
     width: 100%;
     height: auto; 
     margin-top: -56px; 
@@ -45,7 +44,7 @@ body {
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #fafafa;
-    background-color: #007BFF;
+    
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -63,9 +62,8 @@ body {
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
     display: none;
-    background-color: #f9f9f9;
     padding: 10px;
-    border-left: 3px solid #007BFF;
+
     border-radius: 0 0 5px 5px;
     margin-top: 16px; 
     margin-bottom: 20px; 
@@ -134,9 +132,7 @@ body {
             }
             
             .middle-line {
-                width: 2px; 
-                height: 584px; 
-                background-color: rgba(250, 250, 250, 0.2); 
+                display: none;
             }
             
             .faq-column {
@@ -153,8 +149,8 @@ body {
 
 .faq-section .faq-columns {
             gap: 32px; 
-            height: 908px; 
-            margin-top: -56px; 
+            height: auto; 
+            margin-top: 0; 
         }
         
         .faq-question {
@@ -172,7 +168,10 @@ body {
         }
         
         .middle-line {
-            display: none; 
+            display: block; 
+            width: 2px;
+            height: auto;
+            background-color: rgba(250, 250, 250, 0.2);
         }
         
         .faq-columns {
@@ -180,7 +179,7 @@ body {
         }
         
         .faq-column {
-            width: 100%; 
+            width: 50%; 
         }
         
         .vertical-line {
