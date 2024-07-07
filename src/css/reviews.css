@@ -1,10 +1,9 @@
-
 .reviews {
   padding-top: 82px;
   padding-bottom: 82px;
   background-color: var(--bgc);
   overflow: hidden;
-  }
+}
 
 .swiper-reviews {
   overflow: hidden;
@@ -16,7 +15,7 @@
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-color: #FAFAFA;
+  color: #fafafa;
 }
 
 .reviewers-list.swiper-wrapper {
@@ -24,18 +23,15 @@ color: #FAFAFA;
 }
 
 .alert {
-  
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 .swiper-slide {
-  
 }
 .reviewers-list {
   display: flex;
-  
 }
 .swiper-slide.reviewers-card {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 20px;
   padding: 32px 24px;
   width: 332px;
@@ -55,7 +51,7 @@ color: #FAFAFA;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 .reviewer-text {
   width: 264px;
@@ -63,34 +59,29 @@ color: #FAFAFA;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 .review-buttons-wrapper {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.reviews-button{
+.reviews-button {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 68px;
   height: 68px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 50%;
-  fill: #E0E0E0;
-  stroke: #E0E0E0;
+  fill: #e0e0e0;
+  stroke: #e0e0e0;
 }
 
-.button-inactive{
+.button-inactive {
   cursor: default;
   border-color: #3b3b3b;
   fill: #3b3b3b;
   stroke: #3b3b3b;
-  }
-
-
-
-
-
+}
