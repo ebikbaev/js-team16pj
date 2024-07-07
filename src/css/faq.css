@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -34,6 +35,7 @@ color: rgba(250, 250, 250, 0.4);
 .faq-columns {
     display: flex;
     flex-direction: column;
+    gap: 0;
    
 
 }
@@ -43,8 +45,12 @@ color: rgba(250, 250, 250, 0.4);
 .faq-item {
     position: relative;
     margin-top: 20px; 
+    margin-bottom: 20px;
 }
-
+.top-line {
+    display: block;
+    margin-bottom: 0;
+}
 .faq-question {
     font-family: "Inter Tight", sans-serif;
     font-weight: 600;
@@ -61,6 +67,8 @@ color: rgba(250, 250, 250, 0.4);
     align-items: center;
     position: relative;
     word-wrap: break-word;
+    margin-top: 10px;
+
     
 }
 
@@ -83,8 +91,11 @@ color: rgba(250, 250, 250, 0.4);
     width: 100%;
     height: 2px; 
     background-color: rgba(250, 250, 250, 0.2); 
-    margin-bottom: 20px; 
+    /* margin-bottom: 20px;  */
 }
+.forth-question-line {
+    display: none;
+/* margin-bottom: 20px;} */}
 .toggle-button {
     display: flex;
     align-items: center;
@@ -126,6 +137,7 @@ color: rgba(250, 250, 250, 0.4);
                 height: auto; 
                 margin-top: -56px;
                 flex-direction: column;
+                gap: 0;
             }
             
             .faq-question {
@@ -145,6 +157,9 @@ color: rgba(250, 250, 250, 0.4);
                 margin-bottom: 20px;
             }
             
+            .forth-question-line {
+                display: none;}
+
             .faq-columns {
                 flex-direction: column; 
             }
@@ -180,13 +195,14 @@ color: rgba(250, 250, 250, 0.4);
         
         .faq-question {
             font-size: 20px; 
+            margin-bottom: 20px;
         }
 
 
         .faq-answer {
             font-size: 16px; 
             margin-top: 26px; 
-            margin-bottom: 24px;
+            margin-bottom: 26px;
         }
 
         .horizontal-line {
@@ -213,7 +229,9 @@ color: rgba(250, 250, 250, 0.4);
         .faq-column {
             flex: 1; 
         }
-
+/* .forth-question-line {
+    display: block;
+} */
     }
     .rotate-arrow{
        transform: rotate(180deg); 

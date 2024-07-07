@@ -1,58 +1,45 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-// document.querySelectorAll('.faq-question').forEach(question => {
-//     question.addEventListener('click', () => {
-//         const answer = question.nextElementSibling;
-//         const isActive = answer.style.display === 'block';
+document.addEventListener('DOMContentLoaded', function () {
+    const accordion = new Accordion('.accordion-container', {
+        duration: 300, // Тривалість анімації
+        showMultiple: true, // Дозволяємо відкривати декілька елементів одночасно
+        openOnInit: getInitialOpenIndexes() // Визначаємо початковий стан
+    });
 
-        
-//         document.querySelectorAll('.faq-answer').forEach(answer => {
-//             answer.style.display = 'none';
-//         });
+    // Функція для визначення початкового стану акордеону
+    function getInitialOpenIndexes() {
+        const windowWidth = window.innerWidth;
+        if (windowWidth >= 1440) {
+            return [0, 1, 2, 3, 4, 5]; // Відкриваємо всі відповіді на десктопах
+        } else {
+            return [0, 1, 2]; // Відкриваємо три перші відповіді на планшетах і мобільних
+        }
+    }
 
-        
-//         document.querySelectorAll('.toggle-button svg').forEach(svg => {
-//             svg.style.transform = 'rotate(0deg)'; // ?????
-//         });
-
-        
-//         if (!isActive) {
-//             answer.style.display = 'block';
-            
-//             question.querySelector('.toggle-button svg').style.transform = 'rotate(180deg)'; // ?????
-//         }
-//     });
-// });
-
-
-// document.querySelectorAll('.toggle-button').forEach(button => {
-//     button.addEventListener('click', (e) => {
-//         e.stopPropagation(); 
-
-//         const answer = button.parentElement.nextElementSibling;
-//         const isActive = answer.style.display === 'block';
-
-       
-//         document.querySelectorAll('.faq-answer').forEach(answer => {
-//             answer.style.display = 'none';
-//         });
-
-        
-//         document.querySelectorAll('.toggle-button svg').forEach(svg => {
-//             svg.style.transform = 'rotate(0deg)'; // ?????
-//         });
-
-        
-//         if (!isActive) {
-//             answer.style.display = 'block';
-            
-//             button.querySelector('svg').style.transform = 'rotate(180deg)'; // ?????
-//         }
-//     });
-// });
+    // Додаємо обробник подій для зміни стану стрілок
+    document.querySelectorAll('.toggle-button').forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const svg = button.querySelector('svg');
+            const isOpen = accordion.items[index].isOpen;
+            svg.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+    });
+});
 
 
+
+
+
+
+
+
+
+
+
+
+// Без АКОРДЕОНУ
 // function initialAnswerDisplay() {
 //     const answers = document.querySelectorAll('.faq-answer');
 //     const buttons = document.querySelectorAll('.toggle-button svg');
@@ -93,29 +80,3 @@ import 'accordion-js/dist/accordion.min.css';
 
 
 
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     var faqAccordion = new Accordion(document.getElementById('faqAccordion'), {
-//         duration: 400, // Налаштування тривалості анімації в мілісекундах
-//         showItem: function(item) {
-//             // Перевіряємо ширину вікна для відповідної настройки
-//             if (window.innerWidth >= 1440) {
-//                 return true; // Показуємо всі елементи на десктопі
-//             } else if (window.innerWidth >= 768 && window.innerWidth < 1440) {
-//                 return item.index < 3; // Показуємо перші три елементи на планшеті
-//             } else {
-//                 return item.index < 3; // Показуємо перші три елементи на мобільному
-//             }
-//         },
-// collapseOthers: true, // Закриваємо інші елементи, коли відкриваємо новий
-//                 onChange: function(item) {
-//                     // Оновлюємо вигляд стрілок при згортанні і розгортанні відповідей
-//                     var arrow = item.button.querySelector('svg');
-//                     if (item.isExpanded) {
-//                         arrow.style.transform = 'rotate(180deg)'; // Стрілка вгору, коли відповідь відкрита
-//                     } else {
-//                         arrow.style.transform = 'rotate(0deg)'; // Стрілка вниз, коли відповідь закрита
-//                     }
-//                 }
-//             });
-//         });
