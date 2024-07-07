@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section {
+    width: 100%; 
+    background: #1c1d20;
+    padding: 56px 16px 0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    flex-direction: column; 
+    gap: 32px; 
+}
+
+h1 {
+    font-family: "Inter Tight", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px; 
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.4);
+}
+.faq-columns {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.faq-column {
+    width: 100%;
+}
+.faq-item {
+    position: relative;
+    margin-top: 20px; 
+}
+
+.faq-question {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    padding: 10px;
+    padding-right: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    word-wrap: break-word;
+    
+}
+
+.faq-answer {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    display: none;
+    padding: 10px;
+
+    border-radius: 0 0 5px 5px;
+    margin-top: 16px; 
+    margin-bottom: 20px; 
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 2px; 
+    background-color: rgba(250, 250, 250, 0.2); 
+    margin-bottom: 20px; 
+}
+.toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 10px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 7px ;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+                cursor: pointer;
+                background-color: transparent;
+               
+            }
+            
+            /* Стилі для стрілки на кнопці */
+            .toggle-button svg {
+                width: 20px;
+                height: 20px;
+                fill: #fafafa;
+            }
+        
+        
+        /* Стилі для планшетної версії (768px - 1439px) */
+        @media (min-width: 768px) and (max-width: 1439px) {
+            .section {
+                width: 704px; 
+                height: 964px; 
+                padding: 82px 32px 0; 
+                
+            }
+            
+            .faq-columns {
+               
+                height: auto; 
+                margin-top: -56px;
+                flex-direction: column;
+            }
+            
+            .faq-question {
+                font-size: 20px; 
+                
+            }
+            
+            .faq-answer {
+                font-size: 16px; 
+                margin-top: 26px; 
+                margin-bottom: 24px; 
+            }
+             .horizontal-line {
+                width: 100%; 
+                height: 2px;
+                background-color:rgba(250, 250, 250, 0.2);
+                margin-bottom: 20px;
+            }
+            
+            .faq-columns {
+                flex-direction: column; 
+            }
+            
+            
+            .faq-column {
+                width: 100%; 
+            }
+            .toggle-button{
+                
+               
+            }
+        }
+        
+        /* Стилі для десктопної версії (1440px і більше) */
+        @media (min-width: 1440px) {
+            .section {
+                width: 1440px; 
+                height: auto;
+            
+                padding: 0px 32px;
+            }
+
+.faq-columns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+        .faq-column {
+            flex: initial;
+        }
+        
+        .faq-question {
+            font-size: 20px; 
+        }
+
+
+        .faq-answer {
+            font-size: 16px; 
+            margin-top: 26px; 
+            margin-bottom: 24px;
+        }
+
+        .horizontal-line {
+            stroke-width: 1px;
+            stroke: rgba(250, 250, 250, 0.2); 
+            width: 100%;
+            height: 2px;
+            margin-bottom: 20px;
+        }
+
+        .middle-line {
+            display: block; 
+            width: 2px;
+            height: auto;
+            background-color: rgba(250, 250, 250, 0.2);
+            position: absolute;
+            top: 0;
+            bottom: 0; 
+            left: 50%;
+            transform: translateX(-1px);
+        }
+
+        
+        .faq-column {
+            flex: 1; 
+        }
+
+    }
+    .rotate-arrow{
+       transform: rotate(180deg); 
+    }
