@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Додаємо обробник подій для зміни стану стрілок
+    //  для зміни стану стрілок
     document.querySelectorAll('.toggle-button').forEach((button, index) => {
         button.addEventListener('click', () => {
             const svg = button.querySelector('svg');
