@@ -8,15 +8,6 @@ const gallery = document.querySelector('.swiper-reviews .swiper-wrapper');
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
 
-const iziToastOptions = {
-  message: "We're sorry, server error.",
-  messageColor: 'white',
-  backgroundColor: '#3B3B3B33',
-  maxWidth: '360px',
-  position: 'bottomRight',
-  theme: 'dark',
-};
-
 
 //  ============ main function==========
 document.addEventListener('DOMContentLoaded', async () => {
@@ -26,8 +17,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     gallery.innerHTML = markup;
     swiperActivate();
     
-  } catch {
-    iziToast.info(iziToastOptions);
+  } catch (error) {
+      iziToast.error({
+        icon: false,
+        theme: 'dark',
+        color: '#ED3B44',
+        position: 'topCenter',
+        message: error.message,
+        closeOnEscape: true,
+        closeOnClick: true,
+      });
     gallery.innerHTML = `<p class = "alert">Not found</p>`;
+    const buttons = document.querySelectorAll('.reviews-button');
+    buttons.forEach(button => (button.style.display = 'none'));
   }
 });
