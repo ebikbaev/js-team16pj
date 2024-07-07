@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="../css/projects.css" />
-  </head>
-  <body>
-    <section class="container">
-      <h2 class="projects-title">Projects</h2>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
+<section class="container projects">
+  <h2 class="projects-title">Projects</h2>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="flex-container">
+          <div class="mini-container">
             <ul class="projects-list">
-              <li class="projects-item"><p class="projects-text">#react</p></li>
+              <li class="projects-item">
+                <p class="projects-text">#react</p>
+              </li>
               <li class="projects-item"><p class="projects-text">#js</p></li>
               <li class="projects-item">
                 <p class="projects-text">#node js</p>
@@ -32,6 +26,8 @@
               target="_blank"
               ><button class="projects-button">See project</button></a
             >
+          </div>
+          <div class="img-container">
             <picture>
               <source
                 srcset="
@@ -54,12 +50,22 @@
                 "
                 media="(max-width: 767px)"
               />
-              <img src="../img/projects/mobile/reading.jpg" alt="reading" />
+              <img
+                class="projects-img"
+                src="../img/projects/mobile/reading.jpg"
+                alt="reading"
+              />
             </picture>
           </div>
-          <div class="swiper-slide">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="flex-container">
+          <div class="mini-container">
             <ul class="projects-list">
-              <li class="projects-item"><p class="projects-text">#react</p></li>
+              <li class="projects-item">
+                <p class="projects-text">#react</p>
+              </li>
               <li class="projects-item"><p class="projects-text">#js</p></li>
               <li class="projects-item">
                 <p class="projects-text">#node js</p>
@@ -75,6 +81,8 @@
               target="_blank"
               ><button class="projects-button">See project</button></a
             >
+          </div>
+          <div class="img-container">
             <picture>
               <source
                 srcset="
@@ -97,12 +105,23 @@
                 "
                 media="(max-width: 767px)"
               />
-              <img src="../img/projects/mobile/petlove.jpg" alt="reading" />
+              <img
+                class="projects-img"
+                src="../img/projects/mobile/petlove.jpg"
+                alt="reading"
+              />
             </picture>
           </div>
-          <div class="swiper-slide">
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="flex-container">
+          <div class="mini-container">
             <ul class="projects-list">
-              <li class="projects-item"><p class="projects-text">#react</p></li>
+              <li class="projects-item">
+                <p class="projects-text">#react</p>
+              </li>
               <li class="projects-item"><p class="projects-text">#js</p></li>
               <li class="projects-item">
                 <p class="projects-text">#node js</p>
@@ -118,6 +137,8 @@
               target="_blank"
               ><button class="projects-button">See project</button></a
             >
+          </div>
+          <div class="img-container">
             <picture>
               <source
                 srcset="
@@ -140,18 +161,28 @@
                 "
                 media="(max-width: 767px)"
               />
-              <img src="../img/projects/mobile/register.jpg" alt="reading" />
+              <img
+                class="projects-img"
+                src="../img/projects/mobile/register.jpg"
+                alt="reading"
+              />
             </picture>
           </div>
         </div>
-
-        <!-- If we need navigation buttons -->
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
-    </section>
-
-    <!-- <script src="../js/projects.js" type="module"></script> -->
-  </body>
-</html>
+    </div>
+    <!-- If we need navigation buttons -->
+    <ul class="buttons-list">
+      <li class="button-prev button-item">
+        <svg class="btn button-left" width="24" height="24">
+          <use href="./img/icons/symbol-defs.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </li>
+      <li class="button-next button-item">
+        <svg class="btn button-right" width="24" height="24">
+          <use href="./img/icons/symbol-defs.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </li>
+    </ul>
+  </div>
+</section>
