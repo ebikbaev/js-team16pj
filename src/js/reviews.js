@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         closeOnEscape: true,
         closeOnClick: true,
       });
-    gallery.innerHTML = `<p class = "alert">Not found</p>`;
+    gallery.innerHTML = `<p class = "alert-reviews">Not found</p>`;
     const buttons = document.querySelectorAll('.reviews-button');
     buttons.forEach(button => (button.style.display = 'none'));
   }
