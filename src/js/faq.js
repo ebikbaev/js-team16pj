@@ -2,31 +2,29 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener('DOMContentLoaded', function () {
-    const accordion = new Accordion('.accordion-container', {
-        duration: 300, // Тривалість анімації
-        showMultiple: true, // Дозволяємо відкривати декілька елементів одночасно
-        openOnInit: getInitialOpenIndexes() // Визначаємо початковий стан
+    const accordion = new Accordion('.ac', {
+      duration: 300,
+      showMultiple: true,
+      openOnInit: getInitialOpenIndexes()
     });
 
-    // Функція для визначення початкового стану акордеону
     function getInitialOpenIndexes() {
-        const windowWidth = window.innerWidth;
-        if (windowWidth >= 1440) {
-            return [0, 1, 2, 3, 4, 5]; // Відкриваємо всі відповіді на десктопах
-        } else {
-            return [0, 1, 2]; // Відкриваємо три перші відповіді на планшетах і мобільних
-        }
+      const windowWidth = window.innerWidth;
+      if (windowWidth >= 1440) {
+        return [0, 1, 2, 3, 4, 5];
+      } else {
+        return [0, 1, 2];
+      }
     }
 
-    //  для зміни стану стрілок
     document.querySelectorAll('.toggle-button').forEach((button, index) => {
-        button.addEventListener('click', () => {
-            const svg = button.querySelector('svg');
-            const isOpen = accordion.items[index].isOpen;
-            svg.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
-        });
+      button.addEventListener('click', () => {
+        const svg = button.querySelector('svg');
+        const isOpen = accordion.items[index].isOpen;
+        svg.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+      });
     });
-});
+  });
 
 
 
@@ -39,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Без АКОРДЕОНУ
+// Без АКОРДЕОНУ ТУТ ВСЕ ПРАЦЮЄ!
 // function initialAnswerDisplay() {
 //     const answers = document.querySelectorAll('.faq-answer');
 //     const buttons = document.querySelectorAll('.toggle-button svg');
