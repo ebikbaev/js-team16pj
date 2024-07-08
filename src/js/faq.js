@@ -1,30 +1,20 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const accordion = new Accordion('.ac', {
-      duration: 300,
-      showMultiple: true,
-      openOnInit: getInitialOpenIndexes()
+ocument.addEventListener('DOMContentLoaded', function () {
+    const accordions = Array.from(document.querySelectorAll('.ac'));
+    new Accordion(accordions, {
+        duration: 400,
+        showMultiple: true,
+        onOpen: function (currentElement) {
+            console.log(currentElement);
+            currentElement.classList.add('ac-item--active');
+        },
+        onClose: function (currentElement) {
+            currentElement.classList.remove('ac-item--active');
+        }
     });
-
-    function getInitialOpenIndexes() {
-      const windowWidth = window.innerWidth;
-      if (windowWidth >= 1440) {
-        return [0, 1, 2, 3, 4, 5];
-      } else {
-        return [0, 1, 2];
-      }
-    }
-
-    document.querySelectorAll('.toggle-button').forEach((button, index) => {
-      button.addEventListener('click', () => {
-        const svg = button.querySelector('svg');
-        const isOpen = accordion.items[index].isOpen;
-        svg.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
-      });
-    });
-  });
+});
 
 
 
