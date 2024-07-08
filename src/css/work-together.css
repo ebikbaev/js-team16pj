@@ -1,6 +1,4 @@
 :root {
-.class-names-work-together
-  {
     --border-modal: rgba(250, 250, 250, 0.1);
     --border-inp: rgba(250, 250, 250, 0.2);
     --placeholder-color: rgba(250, 250, 250, 0.6);
@@ -8,35 +6,6 @@
     --invalid-text: #E74A3B;
     --btn-hover: #e0373f;
     --backdrop-color: rgba(15, 15, 16, 0.6);
-}
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: var(--bgc);
-  color: #fafafa;
-}
-
-button,
-input {
-  color: inherit;
-  border: none;
-  font-size: inherit;
-  padding: 0;
-  font-weight: inherit;
-
-  --border-modal: rgba(250, 250, 250, 0.1);
-  --border-inp: rgba(250, 250, 250, 0.2);
-  --placeholder-color: rgba(250, 250, 250, 0.6);
-  --success-text: #3cbc81;
-  --invalid-text: #e74a3b;
-  --btn-hover: #e0373f;
-  --backdrop-color: rgba(15, 15, 16, 0.6);
-
 }
 
 .work-together {
@@ -148,7 +117,7 @@ input {
 }
 
 .work-together-link {
-  padding: 10px 12px;
+  padding: 10px 10px;
   border: 1px solid var(--border-inp);
   border-radius: 60px;
   display: block;
@@ -220,7 +189,6 @@ input:-webkit-autofill:active {
   background-color: transparent;
 }
 
-.class-names-work-together
 .modal .close-btn .icon-close {
     width: 22px;
     height: 22px;
@@ -252,6 +220,12 @@ input:-webkit-autofill:active {
   opacity: 0;
   pointer-events: none;
 }
+
+@media screen and (max-width: 375px) {
+    .work-together-link {
+        letter-spacing: -0.5px;
+    }
+  }
 
 @media screen and (min-width: 375px) {
   .modal {
