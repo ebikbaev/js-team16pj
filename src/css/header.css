@@ -159,14 +159,14 @@
   top: 0;
   padding-bottom: 64px;
   padding-top: 302px;
-  background-color: #FAFAFA;
+  background-image: url("./img/header/mob 2x.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu-container {
-    background-image: url("../img/hero/hero-mob-2x.png")
+    background-image: url("./img/header/mob 2x.png")
   }
 }
 
