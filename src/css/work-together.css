@@ -1,4 +1,5 @@
 :root {
+class-names-work-together
     --border-modal: rgba(250, 250, 250, 0.1);
     --border-inp: rgba(250, 250, 250, 0.2);
     --placeholder-color: rgba(250, 250, 250, 0.6);
@@ -25,6 +26,15 @@ input {
   font-size: inherit;
   padding: 0;
   font-weight: inherit;
+
+  --border-modal: rgba(250, 250, 250, 0.1);
+  --border-inp: rgba(250, 250, 250, 0.2);
+  --placeholder-color: rgba(250, 250, 250, 0.6);
+  --success-text: #3cbc81;
+  --invalid-text: #e74a3b;
+  --btn-hover: #e0373f;
+  --backdrop-color: rgba(15, 15, 16, 0.6);
+
 }
 
 .work-together {
@@ -208,9 +218,15 @@ input:-webkit-autofill:active {
   background-color: transparent;
 }
 
+class-names-work-together
 .modal .close-btn .icon-close {
     width: 22px;
     height: 22px;
+=======
+.modal .close-btn .icon {
+  width: 22px;
+  height: 22px;
+
 }
 
 .modal .success-title {
@@ -290,8 +306,12 @@ input:-webkit-autofill:active {
   .modal .close-btn .icon {
     width: 24px;
     height: 24px;
+ class-names-work-together
     }
   .work-together-bg {
+
+  }
+  .work-together .bg {
     width: 26%;
     background-image: url(../img/work-together/work-together-bg-tablet-1x.png);
   }
