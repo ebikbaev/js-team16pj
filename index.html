@@ -12,14 +12,14 @@
     <script type="module" crossorigin src="/js-team16pj/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/js-team16pj/assets/vendor-DgbVeJv6.js">
     <link rel="stylesheet" crossorigin href="/js-team16pj/assets/vendor-BzhsNQu3.css">
-    <link rel="stylesheet" crossorigin href="/js-team16pj/assets/index-CR-wgJ5B.css">
+    <link rel="stylesheet" crossorigin href="/js-team16pj/assets/index-BaWVDAEn.css">
   </head>
   <body>
     <header class="page-header" id="page-header">
   <div class="container">
     <nav class="page-navigation">
       <a class="header-logo" href="./index.html" aria-label="Logo">
-        <div class="header-img">
+        <div class="header-imges">
           <img src="/js-team16pj/assets/header-img-1x-DEOtYWJs.png" srcset="/js-team16pj/assets/header-img-1x-DEOtYWJs.png 1x, /js-team16pj/assets/header-img-2x-BlpHZBme.png" alt="Logo" class="header-logo-img" />
           <p class="header-text">jefferson*</p>
         </div>
@@ -45,10 +45,28 @@
       <a class="header-link-btn" href="#work-together" aria-label="Order button link">Order the project</a>
       <button class="mobile-menu-btn" type="button" aria-label="Mobile menu button">
         <svg class="mobile-menu-btn-icon" width="28" height="28">
-          <path d="M4 6h20M4 14h20M4 22h20"></path>
-        </svg>
+        <use href="./img/icons/symbol-defs#icon-burger-menu"></use></svg>
       </button>
     </nav>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true" role="navigation">
+    <div class="mobile-menu-container">
+      <button id="menu-close" class="mobile-menu-close" aria-label="Close menu">
+        <svg width="32" height="32">
+          <use href="./img/icons/symbol-defs#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-content">
+        <ul class="mobile-menu-numbe">
+          <li><a class="mobile-menu-list" href="#about-me">About me</a></li>
+          <li><a class="mobile-menu-list" href="#benefits">Benefits</a></li>
+          <li><a class="mobile-menu-list" href="#projects">Projects</a></li>
+          <li><a class="mobile-menu-list" href="#faq">FAQ</a></li>
+        </ul>
+        <a class="mobile-menu-order-btn" href="#work-together" aria-label="Order the project link">Order the project</a>
+      </div>
+    </div>
   </div>
 </header>
 
