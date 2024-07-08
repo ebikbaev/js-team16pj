@@ -1,4 +1,32 @@
 :root {
+class-names-work-together
+    --border-modal: rgba(250, 250, 250, 0.1);
+    --border-inp: rgba(250, 250, 250, 0.2);
+    --placeholder-color: rgba(250, 250, 250, 0.6);
+    --success-text: #3CBC81;
+    --invalid-text: #E74A3B;
+    --btn-hover: #e0373f;
+    --backdrop-color: rgba(15, 15, 16, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bgc);
+  color: #fafafa;
+}
+
+button,
+input {
+  color: inherit;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  font-weight: inherit;
+
   --border-modal: rgba(250, 250, 250, 0.1);
   --border-inp: rgba(250, 250, 250, 0.2);
   --placeholder-color: rgba(250, 250, 250, 0.6);
@@ -6,6 +34,7 @@
   --invalid-text: #e74a3b;
   --btn-hover: #e0373f;
   --backdrop-color: rgba(15, 15, 16, 0.6);
+
 }
 
 .work-together {
@@ -16,12 +45,12 @@
   font-weight: 500;
 }
 
-.work-together .image,
-.work-together .section-title {
+.work-together-logo,
+.work-together-title {
   display: inline;
 }
 
-.work-together .image {
+.work-together-logo {
   position: relative;
   top: 9px;
   width: 45px;
@@ -29,7 +58,7 @@
   margin-right: 10px;
 }
 
-.work-together .section-title {
+.work-together-title {
   text-transform: uppercase;
   line-height: 1.2;
   font-size: 40px;
@@ -46,7 +75,7 @@
   color: var(--btn-text);
 }
 
-.work-together .form {
+.work-together-form {
   margin-bottom: 65px;
 }
 
@@ -112,11 +141,11 @@
   background-color: var(--btn-hover);
 }
 
-.work-together .list {
+.work-together-contacts {
   gap: 4px;
 }
 
-.work-together .link {
+.work-together-link {
   padding: 10px 12px;
   border: 1px solid var(--border-inp);
   border-radius: 60px;
@@ -125,7 +154,7 @@
   font-size: 14px;
 }
 
-.work-together .link:hover {
+.work-together-link:hover {
   border-color: #fafafa;
 }
 
@@ -138,7 +167,7 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.work-together .bg {
+.work-together-bg {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -153,7 +182,7 @@ input:-webkit-autofill:active {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .work-together .bg {
+  .work-together .work-together-bg {
     background-image: url(../img/work-together/work-together-bg-mob-2x.png);
   }
 }
@@ -189,9 +218,15 @@ input:-webkit-autofill:active {
   background-color: transparent;
 }
 
+class-names-work-together
+.modal .close-btn .icon-close {
+    width: 22px;
+    height: 22px;
+=======
 .modal .close-btn .icon {
   width: 22px;
   height: 22px;
+
 }
 
 .modal .success-title {
@@ -226,7 +261,7 @@ input:-webkit-autofill:active {
   .work-together {
     padding: 80px 0 170px;
   }
-  .work-together .image {
+  .work-together-logo {
     top: 12px;
     width: 70px;
     border-radius: 24px;
@@ -235,10 +270,10 @@ input:-webkit-autofill:active {
     width: 465px;
     margin-bottom: 20px;
   }
-  .work-together .section-title {
+  .work-together-title {
     font-size: 64px;
   }
-  .work-together .form {
+  .work-together-form {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -256,10 +291,10 @@ input:-webkit-autofill:active {
   .work-together .form-element.invalid::after {
     top: 45px;
   }
-  .work-together .list {
+  .work-together-contacts {
     gap: 8px;
   }
-  .work-together .link {
+  .work-together-link {
     padding: 18px 32px;
     font-size: 16px;
   }
@@ -271,6 +306,10 @@ input:-webkit-autofill:active {
   .modal .close-btn .icon {
     width: 24px;
     height: 24px;
+ class-names-work-together
+    }
+  .work-together-bg {
+
   }
   .work-together .bg {
     width: 26%;
@@ -280,7 +319,7 @@ input:-webkit-autofill:active {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .work-together .bg {
+    .work-together .work-together-bg {
       background-image: url(../img/work-together/work-together-bg-tablet-2x.png);
     }
   }
@@ -293,7 +332,7 @@ input:-webkit-autofill:active {
   .work-together .inp {
     width: 390px;
   }
-  .work-together .bg {
+  .work-together-bg {
     width: 27.77778%;
     background-image: url(../img/work-together/work-together-bg-desk-1x.png);
   }
@@ -301,7 +340,7 @@ input:-webkit-autofill:active {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .work-together .bg {
+    .work-together-bg {
       background-image: url(../img/work-together/work-together-bg-desk-2x.png);
     }
   }

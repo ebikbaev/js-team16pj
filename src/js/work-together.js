@@ -5,7 +5,7 @@ import "izitoast/dist/css/iziToast.min.css";
 
 
 const refs = {
-    form: document.querySelector('.form'),
+    form: document.querySelector('#work-together-form'),
     emailContainer: document.querySelector('#email-container'),
     email: document.querySelector('#email'),
 }
