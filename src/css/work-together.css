@@ -1,5 +1,5 @@
 :root {
-class-names-work-together
+.class-names-work-together
     --border-modal: rgba(250, 250, 250, 0.1);
     --border-inp: rgba(250, 250, 250, 0.2);
     --placeholder-color: rgba(250, 250, 250, 0.6);
@@ -218,7 +218,7 @@ input:-webkit-autofill:active {
   background-color: transparent;
 }
 
-class-names-work-together
+.class-names-work-together
 .modal .close-btn .icon-close {
     width: 22px;
     height: 22px;
@@ -306,7 +306,7 @@ class-names-work-together
   .modal .close-btn .icon {
     width: 24px;
     height: 24px;
- class-names-work-together
+ .class-names-work-together
     }
   .work-together-bg {
 
