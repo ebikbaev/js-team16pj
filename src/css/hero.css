@@ -1,5 +1,5 @@
 .hero-section {
-    padding-top: 168px;
+    padding-top: 281px;
     padding-bottom: 32px;
     background-image: url("../img/hero/hero-mob-1x.png");
     background-size: cover;
@@ -29,6 +29,9 @@
     text-transform: uppercase;
     color: #fafafa;
     margin-bottom: 212px;
+}
+.title-line {
+    display: block;
 }
 
 .social-list {
@@ -76,26 +79,27 @@
 
 @media screen and (min-width: 768px) {
     .hero-section {
-        padding-top: 188px;
+        padding-top: 300px;
         padding-bottom: 32px;
         background-image: url("../img/hero/hero-tab-1x.png");
 
     }
-
     .hero-container {
-        align-items: flex-end;
-
-    }
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+   
     .hero-title {
         font-size: 90px;
         margin-bottom: 187px;
+        text-align: left;
     }
 
     .social-list {
         gap: 8px;
         justify-content: flex-end;
-        width: 473px;
+        width: 100%;
     }
 
     .icon {
@@ -132,11 +136,11 @@
 
 @media screen and (min-width: 1440px) {
     .hero-section {
-        padding-top: 188px;
+        padding-top: 300px;
         padding-bottom: 32px;
         background-image: url("../img/hero/hero-desk-1x.png")
     }
-
+    
     .hero-title {
         margin-bottom: 253px;
     }
