@@ -1,5 +1,6 @@
 :root {
 .class-names-work-together
+  {
     --border-modal: rgba(250, 250, 250, 0.1);
     --border-inp: rgba(250, 250, 250, 0.2);
     --placeholder-color: rgba(250, 250, 250, 0.6);
@@ -7,6 +8,7 @@
     --invalid-text: #E74A3B;
     --btn-hover: #e0373f;
     --backdrop-color: rgba(15, 15, 16, 0.6);
+}
 }
 
 * {
