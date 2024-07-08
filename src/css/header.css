@@ -59,7 +59,7 @@
   }
 
   .header-menu-btn {
-    color: #FAFAFA;
+    color: #fafafa;
     margin-bottom: 18px;
     line-height: normal;
     padding: 0;
@@ -103,6 +103,7 @@
     border-bottom: 2px solid transparent;
     transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #FAFAFA;
   }
 
   .nav-list:hover,
@@ -165,7 +166,7 @@
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu-container {
-    background-color: #FAFAFA;
+    background-image: url("../img/hero/hero-mob-2x.png")
   }
 }
 
@@ -190,6 +191,7 @@
 
 .mobile-menu-list {
   text-align: center;
+  color: #FAFAFA;;
   letter-spacing: -0.02em;
   margin: 0 auto;
   border-bottom: 2px solid transparent;
