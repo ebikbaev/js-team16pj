@@ -317,7 +317,7 @@ input:-webkit-autofill:active {
     width: 26%;
     background-image: url(../img/work-together/work-together-bg-tablet-1x.png);
   }
-
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
