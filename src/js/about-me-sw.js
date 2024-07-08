@@ -1,19 +1,22 @@
-// about-me-sw.js
-
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
+const swiperAboutMe = new Swiper('.swiper-container', {
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1440: {
+            slidesPerView: 6,
+        },
+    },
     loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    speed: 500,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
     },
-  });
 });
+
