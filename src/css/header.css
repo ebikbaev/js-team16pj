@@ -170,7 +170,7 @@
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu {
     object-fit: fill;
-    /* background-image: url(); */
+    
   }
 }
 
