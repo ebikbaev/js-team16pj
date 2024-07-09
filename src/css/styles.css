@@ -34,11 +34,26 @@
   --bgc: #1c1d20;
   --cards: #242527;
   --btn-text: #ed3b44;
-  --maint-text: FAFAFA;
+  --maint-text: #fafafa;
   --gray: #3b3b3b;
 }
-.body {
-  font-family: 'InterTight', sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bgc);
+  color: var(--maint-text);
+}
+
+button,
+input {
+  color: inherit;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  font-weight: inherit;
 }
 .container {
   width: 100%;
