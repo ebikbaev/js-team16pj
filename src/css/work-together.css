@@ -187,13 +187,14 @@ input:-webkit-autofill:active {
   top: 20px;
   right: 20px;
   line-height: 0;
-  fill: none;
-  stroke: #fafafa;
+  background-color: transparent;
 }
 
 .modal .close-btn .icon-close {
   width: 22px;
   height: 22px;
+  fill: none;
+  stroke: var(--maint-text);
 }
 .modal .close-btn .icon {
   width: 22px;
@@ -278,6 +279,10 @@ input:-webkit-autofill:active {
   .modal {
     padding: 65px;
     width: 495px;
+  }
+
+  .work-together .form-element {
+    margin-bottom: 0;
   }
 
   .modal .close-btn .icon {
