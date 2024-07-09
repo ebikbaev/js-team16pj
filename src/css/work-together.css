@@ -1,11 +1,11 @@
 :root {
-    --border-modal: rgba(250, 250, 250, 0.1);
-    --border-inp: rgba(250, 250, 250, 0.2);
-    --placeholder-color: rgba(250, 250, 250, 0.6);
-    --success-text: #3CBC81;
-    --invalid-text: #E74A3B;
-    --btn-hover: #e0373f;
-    --backdrop-color: rgba(15, 15, 16, 0.6);
+  --border-modal: rgba(250, 250, 250, 0.1);
+  --border-inp: rgba(250, 250, 250, 0.2);
+  --placeholder-color: rgba(250, 250, 250, 0.6);
+  --success-text: #3cbc81;
+  --invalid-text: #e74a3b;
+  --btn-hover: #e0373f;
+  --backdrop-color: rgba(15, 15, 16, 0.6);
 }
 
 .work-together {
@@ -157,7 +157,7 @@ input:-webkit-autofill:active {
     background-image: url(../img/work-together/work-together-bg-mob-2x.png);
   }
 }
-.backdrop {
+.work-together-backdrop {
   position: fixed;
   top: 0;
   z-index: 100;
@@ -169,7 +169,7 @@ input:-webkit-autofill:active {
   overflow-y: auto;
 }
 
-.modal {
+.work-together-modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -180,55 +180,62 @@ input:-webkit-autofill:active {
   border: 1px solid var(--border-modal);
   text-align: center;
   width: 92%;
+  transition: transform .3s;
 }
 
-.modal .close-btn {
+.work-together-modal .close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
+  line-height: 0;
   background-color: transparent;
 }
 
-.modal .close-btn .icon-close {
-    width: 22px;
-    height: 22px;
-}
-.modal .close-btn .icon {
+.work-together-modal .close-btn .icon-close {
   width: 22px;
   height: 22px;
-
+  fill: none;
+  stroke: var(--maint-text);
+}
+.work-together-modal .close-btn .icon {
+  width: 22px;
+  height: 22px;
 }
 
-.modal .success-title {
+.work-together-modal .success-title {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.modal .success-message {
+.work-together-modal .success-message {
   color: var(--placeholder-color);
   font-weight: 500;
 }
 
-.modal .success-title,
-.modal .success-message {
+.work-together-modal .success-title,
+.work-together-modal .success-message {
   line-height: 1.5;
 }
 
-.hidden {
+.work-together-backdrop.hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
+.work-together-backdrop.hidden .work-together-modal {
+  transform: translate(-50%, -50%) scale(0) rotate(270deg);
+}
+
 @media screen and (max-width: 375px) {
-    .work-together-link {
-        letter-spacing: -0.5px;
-    }
+  .work-together-link {
+    letter-spacing: -0.5px;
   }
+}
 
 @media screen and (min-width: 375px) {
-  .modal {
+  .work-together-modal {
     width: 346px;
   }
 }
@@ -274,15 +281,19 @@ input:-webkit-autofill:active {
     padding: 18px 32px;
     font-size: 16px;
   }
-  .modal {
+  .work-together-modal {
     padding: 65px;
     width: 495px;
   }
 
-  .modal .close-btn .icon {
+  .work-together .form-element {
+    margin-bottom: 0;
+  }
+
+  .work-together-modal .close-btn .icon {
     width: 24px;
     height: 24px;
-}
+  }
   .work-together-bg {
     width: 26%;
     background-image: url(../img/work-together/work-together-bg-tablet-1x.png);

@@ -2,8 +2,8 @@
   padding: 32px 0;
 }
 
-.benefits-container {
-}
+/* .benefits-container {
+} */
 
 .benefits-title {
   font-weight: 600;
@@ -30,6 +30,9 @@
 }
 
 .benefits-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   background-color: #ed3b44;
@@ -38,7 +41,8 @@
 }
 
 .benefits-item-icon {
-  fill: currentColor;
+  fill: none;
+  stroke: #fafafa;
   display: block;
 }
 
@@ -59,7 +63,7 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-.order-btn {
+.benefits-order-btn {
   display: block;
   text-align: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -80,6 +84,10 @@
   .benefits-item {
     width: calc((100% - 16px) / 2);
   }
+
+  .benefits-order-btn {
+    margin-top: 64px;
+  }
 }
 /*! ============= media DESKTOP ==============  */
 
@@ -87,4 +95,19 @@
   /* .container {
     max-width: 1440px;
   }  */
+
+  .benefits-container {
+    display: flex;
+  }
+
+  .benefits-title {
+    display: block;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .benefits-list {
+    align-self: flex-end;
+    max-width: 680px;
+  }
 }
