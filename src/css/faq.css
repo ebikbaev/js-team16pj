@@ -89,9 +89,9 @@ height: 1072px;
 }
 
 .list-item-title svg {
-    border: 1px solid rgba(250, 250, 250, 0.2); /* Grey border */
-    border-radius: 50%; /* Make the border circular */
-    padding: 2px; /* Add padding to create space around the icon */
+    border: 1px solid rgba(250, 250, 250, 0.2); 
+    border-radius: 50%; 
+    padding: 2px; 
 }
 
 .list-item:last-child .list-item-title {
