@@ -247,9 +247,8 @@
 
 .faq-section .list-item-title svg.ac-trigger {
     position: relative;
-    top: 0; /* Ensures the arrow stays at the same height */
-    right: 0; /* Aligns it to the right */
-    transform: none;
+    top: 0; 
+    right: 0; 
+    transform: none;}
     
-}
 }
