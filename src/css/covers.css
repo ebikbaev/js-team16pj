@@ -91,6 +91,7 @@ body {
   justify-content: center;
 }
 .covers-gallery-list {
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -101,6 +102,7 @@ body {
 .covers-gallery-list.revers {
   flex-direction: row-reverse;
 }
+
 .marqueeLine-style {
   flex-shrink: 0;
   display: flex;
@@ -182,11 +184,14 @@ body {
 
 /* ===========================DESKTOP======================== */
 @media screen and (min-width: 1440px) {
-  .covers-section {
-    padding-top: 82px;
-    padding-bottom: 82px;
-    max-width: 1440px;
-  }
+
+    .covers-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+        /* max-width: 1440px; */
+       
+    }
+    
 
   .covers-section-container {
     max-width: 100%;
