@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     const data = await fetchData();
     const markup = reviewsTemplate(data);
     gallery.innerHTML = markup;
+    const slides = document.querySelectorAll('.swiper-slide.reviewers-card');
+    slides.forEach(slide => {
+      if (slide.scrollHeight > slide.clientHeight) {
+        slide.classList.add('scrollable');
+      }
+    });
+
     swiperActivate();
     
   } catch (error) {
