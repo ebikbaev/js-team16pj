@@ -14,24 +14,47 @@
 @import url('./projects.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
+@import 'modern-normalize/modern-normalize.css';
 
 @font-face {
-  font-family: Inter Tight;
-  src: url(../../fonts/InterTight-Medium.ttf);
+  font-family: 'InterTightMedium';
+  src: url('../../fonts/InterTight-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
+
 @font-face {
-  font-family: Inter Tight;
-  src: url(../../fonts/InterTight-SemiBold.ttf);
+  font-family: 'InterTight';
+  src: url('../../fonts/InterTight-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 :root {
   --bgc: #1c1d20;
   --cards: #242527;
   --btn-text: #ed3b44;
-  --maint-text: FAFAFA;
+  --maint-text: #fafafa;
   --gray: #3b3b3b;
 }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background-color: var(--bgc);
+  color: var(--maint-text);
+}
+
+button,
+input {
+  color: inherit;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  font-weight: inherit;
+}
 .container {
   width: 100%;
   padding-left: 5px;
@@ -52,9 +75,9 @@
     padding-right: 32px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
     padding-left: 32px;
     padding-right: 32px;
   }
