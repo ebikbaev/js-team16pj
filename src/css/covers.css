@@ -109,17 +109,7 @@ position: absolute;
     transform: rotate(16deg);
     
 }
-/* .covers-list-item{
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-} */
+
 .marqueeLine-style {
     flex-shrink: 0;
     display: flex;
@@ -213,7 +203,7 @@ position: absolute;
     .covers-section {
         padding-top: 82px;
         padding-bottom: 82px;
-        max-width: 1440px;
+        /* max-width: 1440px; */
        
     }
     
