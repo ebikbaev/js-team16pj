@@ -1,5 +1,5 @@
 const refs = {
-    backdrop: document.querySelector('.backdrop'),
+    backdrop: document.querySelector('.work-together-backdrop'),
     successTitle: document.querySelector('.success-title'),
     successText: document.querySelector('.success-message')
 }

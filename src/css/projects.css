@@ -1,9 +1,8 @@
 .projects {
-  background: #1c1d20;
+  padding: 32px 0;
 }
 
 .projects-title {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -15,7 +14,6 @@
 }
 
 .projects-text {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -44,9 +42,8 @@
 }
 
 .projects-head-text {
-  width: 320px;
+  width: 279px;
   display: block;
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16667;
@@ -83,15 +80,31 @@
 }
 
 .button-item {
-  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
   padding: 14px;
   width: 52px;
   height: 52px;
 }
 
+.button-left,
+.button-right {
+  fill: none;
+  stroke: #fafafa;
+}
+
 .swiper-button-disabled {
+  cursor: default;
   border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.swiper-button-disabled .button-left,
+.swiper-button-disabled .button-right {
+  stroke: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,7 +140,8 @@
     height: 68px;
   }
 
-  .button-right {
+  .button-right,
+  .button-left {
     width: 32px;
     height: 32px;
   }
@@ -168,8 +182,4 @@
     border-radius: 0 24px 24px 0;
     padding: 120px 37px 120px 37px;
   }
-}
-
-.button-prev {
-  stroke: #fafafa;
 }
