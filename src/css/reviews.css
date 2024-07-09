@@ -1,8 +1,6 @@
-
-
 .alert-reviews {
   margin: auto;
-  color: #E0E0E0;
+  color: #e0e0e0;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -35,8 +33,8 @@
 .alert {
   color: #e0e0e0;
 }
-.swiper-slide {
-}
+/* .swiper-slide {
+} */
 .reviewers-list {
   display: flex;
 }
@@ -83,15 +81,14 @@
   align-items: center;
   width: 68px;
   height: 68px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 50%;
-  fill: #e0e0e0;
-  stroke: #e0e0e0;
+  fill: none;
+  stroke: #fafafa;
 }
 
 .button-inactive {
   cursor: default;
-  border-color: #3b3b3b;
-  fill: #3b3b3b;
+  border-color: rgba(250, 250, 250, 0.2);
   stroke: #3b3b3b;
 }
