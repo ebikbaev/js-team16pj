@@ -66,25 +66,29 @@
     border: none;
 }
 
-.faq-section .list-item-title svg.ac-trigger {
+.faq-section .list-item-title svg.ac-trigger{
     border: 1px solid rgba(150, 150, 150, 0.5); /* Gray border */
-    border-radius: 50%; /* Rounded border */
+    border-radius: 50%; 
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
-    background-color: transparent; /* Забирає заливку */
+    stroke-width: 2px;
+    stroke: #fafafa;
+    fill:#fafafa;
+    background-color: transparent; 
+    
 }
 
-.faq-section .list-item-title svg.ac-trigger use {
-    stroke: #ffffff; /* Ensures the lines of the arrow are white */
-    fill: none; /* No fill for the arrow */
+.faq-section .list-item-title svg.ac-trigger path {
+    stroke: #ffffff; 
+    fill: none; 
+    stroke-width: 2px; 
 }
-
 .faq-section .list-item.active .ac-trigger {
     transform: rotate(180deg);
 }
@@ -144,6 +148,8 @@
 
     .faq-section .list-item-title svg.ac-trigger {
         padding: 10px;
+        stroke-width: 2px;
+    
     }
 }
 
@@ -190,6 +196,7 @@
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
+    
 }
 }
 
@@ -243,5 +250,6 @@
     top: 0; /* Ensures the arrow stays at the same height */
     right: 0; /* Aligns it to the right */
     transform: none;
+    
 }
 }
