@@ -278,6 +278,7 @@ body {
 
   .ac.about-me-info-item.is-active .about-me-info-text-list {
     padding-left: 696px;
+    padding-right: 68px;
   }
 
   .about-me-info-text-list p:first-child {

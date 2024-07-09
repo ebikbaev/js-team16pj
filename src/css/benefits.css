@@ -30,6 +30,9 @@
 }
 
 .benefits-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   background-color: #ed3b44;
@@ -38,7 +41,8 @@
 }
 
 .benefits-item-icon {
-  fill: currentColor;
+  fill: none;
+  stroke: #fafafa;
   display: block;
 }
 
