@@ -83,6 +83,7 @@
 }
 
 .button-item {
+  cursor: pointer;
   border: 1px solid #e0e0e0;
   border-radius: 60px;
   padding: 14px;
@@ -90,8 +91,20 @@
   height: 52px;
 }
 
+.button-left,
+.button-right {
+  stroke: #e0e0e0;
+  fill: #e0e0e0;
+}
+
 .swiper-button-disabled {
+  cursor: default;
   border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.btn-off {
+  fill: #3b3b3b;
+  stroke: #3b3b3b;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,6 +140,7 @@
     height: 68px;
   }
 
+  .button-left,
   .button-right {
     width: 32px;
     height: 32px;
@@ -168,8 +182,4 @@
     border-radius: 0 24px 24px 0;
     padding: 120px 37px 120px 37px;
   }
-}
-
-.button-prev {
-  stroke: #fafafa;
 }
