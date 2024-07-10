@@ -185,6 +185,8 @@
     flex-direction: column;
     gap: 32px;
     width: 704px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .faq-section .list {
@@ -218,7 +220,7 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
-    padding: 64px 32px;
+    padding: 82px 32px;
     width: 1440px;
     height: auto;
   }
