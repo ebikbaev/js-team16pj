@@ -14,7 +14,7 @@
 }
 
 .faq-section h2 {
-    font-family: "Inter Tight", sans-serif;
+    
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -51,7 +51,7 @@
 }
 
 .faq-section .list-item-title {
-    font-family: "Inter Tight", sans-serif;
+    
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -64,9 +64,12 @@
     background-color: rgba(28, 29, 32, 1);
     padding-right: 50px;
     border: none;
-    position: relative; /* Встановлюємо відносне позиціонування для батьківського елементу */
+    position: relative; 
+    word-wrap: break-word;
 }
-
+.faq-section .list-item-text {
+    flex: 1;
+}
 .faq-section .list-item-title svg.ac-trigger {
     border: 1px solid rgba(150, 150, 150, 0.5); /* Gray border */
     border-radius: 50%; /* Rounded border */
@@ -113,6 +116,9 @@
     max-height: 1000px; /* Adjust based on content */
     padding: 10px 0;
 }
+.faq-section .list-item-icon {
+    flex-shrink: 0;
+}
 
 /* Mobile Styles (up to 767px) */
 @media (max-width: 767px) {
@@ -125,11 +131,21 @@
     }
 
     .faq-section .list-item-title {
-        padding-right: 50px;
+        padding-right: 36px;
+        max-width: 265px;
+        word-wrap: break-word;
+
+    }
+    .faq-section .list-item-icon {
+        flex-shrink: 0;
+
     }
 
     .faq-section .list-item-title svg.ac-trigger {
-        padding: 10px;
+        right: 26px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -145,6 +161,7 @@
 
     .faq-section .list-item-title {
         padding-right: 50px;
+        word-wrap: break-word;
     }
 
     .faq-section .list-item-title svg.ac-trigger {
