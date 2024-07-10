@@ -1,4 +1,6 @@
-.faq-section {
+ 
+ 
+ .faq-section {
   width: 100%;
   background: #1c1d20;
   padding: 56px 16px 0;
@@ -62,7 +64,12 @@
   background-color: rgba(28, 29, 32, 1);
   padding-right: 50px;
   border: none;
-  position: relative; /* Встановлюємо відносне позиціонування для батьківського елементу */
+  position: relative;
+}
+
+.faq-section .list-item-title span {
+  flex: 1;
+  margin-right: 10px;
 }
 
 .faq-section .list-item-title svg.ac-trigger {
@@ -80,20 +87,22 @@
   right: 16px; /* Вирівнювання по правому краю */
   top: 50%;
   transform: translateY(-50%); /* Центруємо SVG по вертикалі */
+  stroke: #fafafa;
+  fill: none;
+  stroke-width: 2px;
 }
 
- .faq-section .list-item-title svg.ac-trigger path {
-  stroke: #fafafa; 
-  fill: none; 
-  stroke-width: 2px;}
-
+.faq-section .list-item-title svg.ac-trigger path {
+  stroke: #fafafa;
+  fill: none;
+  stroke-width: 2px;
+}
 
 .faq-section .list-item.active .ac-trigger {
   transform: translateY(-50%) rotate(180deg); /* Центруємо SVG по вертикалі і обертаємо */
 }
 
 .faq-section .list-item-text {
-  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -123,17 +132,22 @@
   }
 
   .faq-section .list-item-title {
-    max-width: 265px; /* Set maximum width for title */
-    padding-right: 46px; /* Add padding to make space for the icon and extra 10px */
+    padding-right: 36px; /* Add padding to make space for the icon */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq-section .list-item-title span {
+    display: inline-block;
+    margin-right: 10px;
+    max-width: calc(100% - 36px); /* Ensure text does not overlap the icon */
   }
 
   .faq-section .list-item-title svg.ac-trigger {
-    right: 13px; stroke: #fafafa; 
-    fill: none; 
-    stroke-width: 2px;
+    right: 1px; /* Position SVG 1px from the right edge */
   }
 }
-
 
 /* Mobile Styles (320px to 375px) */
 @media (min-width: 320px) and (max-width: 374px) {
@@ -146,32 +160,30 @@
   }
 
   .faq-section .list-item-title {
-    max-width: 265px; /* Set maximum width for title */
-    padding-right: 46px; /* Add padding to make space for the icon and extra 10px */
+    padding-right: 36px; /* Add padding to make space for the icon */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .faq-section .list-item-title span {
+    display: inline-block;
+    margin-right: 10px;
+    max-width: calc(100% - 36px); /* Ensure text does not overlap the icon */
   }
 
   .faq-section .list-item-title svg.ac-trigger {
-    right: 13px; /* Position SVG 13px from the right edge */
+    right: 1px; /* Position SVG 1px from the right edge */
   }
 }
-
-.list-item-title svg.ac-trigger {
-  padding: 10px;
-  stroke: #fafafa; 
-    fill: none; 
-    stroke-width: 2px;
-  }
-
-
-/* Tablet Styles (768px and above) */
+ /* Tablet Styles (768px and above)  */
 @media (min-width: 768px) and (max-width: 1439px) {
   .faq-section {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-
-gap: 32px;
+    gap: 32px;
     width: 704px;
   }
 
@@ -190,12 +202,13 @@ gap: 32px;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-     stroke: #fafafa; 
-      fill: none; 
-      stroke-width: 2px;
-    }
+    stroke: #fafafa;
+    fill: none;
+    stroke-width: 2px;
+    width: 34px;
+    height: 34px;
   }
-
+}
 
 /* Desktop Styles (1440px and above) */
 @media (min-width: 1440px) {
@@ -237,7 +250,6 @@ gap: 32px;
   .faq-section .list-item {
     padding: 32px;
   }
-
   .faq-section .list-item-title {
     padding-right: 50px;
   }
@@ -247,9 +259,12 @@ gap: 32px;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-     stroke: #fafafa; 
-      fill: none; 
-      stroke-width: 2px;
-    }
+    stroke: #fafafa;
+    fill: none;
+    stroke-width: 2px;
+    width: 34px;
+    height: 34px;
   }
+}
+
 
