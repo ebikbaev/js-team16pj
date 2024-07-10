@@ -25,36 +25,36 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (menuBtn && desktopMenu) {
     menuBtn.addEventListener('click', () => {
-      console.log('Menu button clicked');
+      
       desktopMenu.classList.toggle('visually-hidden');
       desktopMenu.classList.toggle('is-hidden');
-      console.log('desktopMenu classList after toggle:', desktopMenu.classList);
+      
     });
   }
 
   
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
-      console.log('Mobile menu button clicked');
+      
       mobileMenu.classList.add('open');
-      console.log('mobileMenu classList after adding open:', mobileMenu.classList);
+      
     });
   }
 
   if (closeBtn && mobileMenu) {
     closeBtn.addEventListener('click', () => {
-      console.log('Mobile menu close button clicked');
+      
       mobileMenu.classList.remove('open');
-      console.log('mobileMenu classList after removing open:', mobileMenu.classList);
+      
     });
   }
 
   if (mobileMenu) {
     mobileMenu.addEventListener('click', (event) => {
       if (event.target.tagName === 'A') {
-        console.log('Mobile menu link clicked');
+        
         mobileMenu.classList.remove('open');
-        console.log('mobileMenu classList after removing open:', mobileMenu.classList);
+        
       }
     });
   }
@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
     orderBtns.forEach(btn => {
       btn.addEventListener('click', (event) => {
         event.preventDefault();
-        console.log('Order button clicked:', btn);
+        
         smoothScroll('#work-together');
         if (btn.classList.contains('mobile-menu-order-btn') && mobileMenu) {
           mobileMenu.classList.remove('open');
           mobileMenu.setAttribute('aria-hidden', 'true');
-          console.log('mobileMenu classList after order button click:', mobileMenu.classList);
+          
         }
       });
     });
