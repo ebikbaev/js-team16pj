@@ -108,6 +108,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .projects {
+    padding: 48px 0;
+  }
+
   .projects-img {
     padding: 120px 45px 120px 45px;
   }
@@ -148,6 +152,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .projects {
+    padding: 64px 0;
+  }
+
   .mini-container {
     width: 688px;
   }
