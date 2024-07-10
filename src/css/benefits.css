@@ -77,9 +77,9 @@
 /*! ============= media TABLET ==============  */
 
 @media screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-  } */
+  .benefits {
+    padding: 48px 0;
+  }
 
   .benefits-item {
     width: calc((100% - 16px) / 2);
@@ -92,9 +92,9 @@
 /*! ============= media DESKTOP ==============  */
 
 @media screen and (min-width: 1440px) {
-  /* .container {
-    max-width: 1440px;
-  }  */
+  .benefits {
+    padding: 82px 0;
+  }
 
   .benefits-container {
     display: flex;

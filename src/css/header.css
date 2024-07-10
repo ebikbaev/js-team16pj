@@ -131,8 +131,8 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
-  background-image: url("../img/header/mob 2x.png")
-}
+  background-image: url("../img/header/Glass effect 1.png")
+  }
 
 
 .mobile-menu-close {
@@ -170,7 +170,7 @@
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu {
     object-fit: fill;
-    /* background-image: url(); */
+    
   }
 }
 

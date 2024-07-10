@@ -17,6 +17,8 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .hero-title {
@@ -36,7 +38,6 @@
     justify-content: center;
     padding-bottom: 10px;
 }
-
 
 .social-list {
     display: flex;
@@ -64,7 +65,10 @@
 }
 
 @media screen and (min-width: 375px) {
-    
+    .hero-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .icon {
         font-weight: 500;
         font-size: 14px;
@@ -83,6 +87,8 @@
     .hero-container {
         display: flex;
         flex-direction: column;
+        padding-left: 32px;
+        padding-right: 32px;
         }
    
     .hero-title {
