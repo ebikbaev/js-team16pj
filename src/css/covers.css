@@ -130,7 +130,7 @@ body {
   .covers-section {
     padding-top: 32px;
     padding-bottom: 32px;
-    max-width: 375px;
+    /* max-width: 375px; */
   }
 
   .covers-section-container {
@@ -156,7 +156,7 @@ body {
   .covers-section {
     padding-top: 48px;
     padding-bottom: 48px;
-    max-width: 768px;
+    /* max-width: 768px; */
   }
   .covers-section-container {
     max-width: 100%;
@@ -189,6 +189,7 @@ body {
         padding-top: 82px;
         padding-bottom: 82px;
         /* max-width: 1440px; */
+        
        
     }
     
