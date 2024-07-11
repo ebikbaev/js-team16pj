@@ -46,23 +46,36 @@
     gap: 4px;
 }
 
+
 .icon {
+    display: block;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 7px 7px;
-    width: 37px;
-    height: 37px;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: -0.02em;
+    text-align: center;
     color: #fafafa;
     transition: 0.3s;
+}
+.hero-mail {
+        padding: 8px 10px;
+        width: auto;
 }
 
 .icon:hover,
 .icon:focus {
     border: 1px solid #fafafa;
 }
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    padding: 0;
+}
+
 
 @media screen and (min-width: 375px) {
     .hero-container {
@@ -73,7 +86,14 @@
         font-weight: 500;
         font-size: 14px;
         letter-spacing: -0.02em;
-        padding: 10px 10px;
+    }
+
+    .circle {
+        width: 37px;
+        height: 37px;
+    }
+    .hero-mail {
+        padding: 10px 12px;
     }
 }
 
@@ -110,10 +130,14 @@
     }
 
     .icon {
-        padding: 18px;
+        font-size: 16px;
+    }
+    .hero-mail {
+        padding: 18px 24px;
+    }
+    .circle {
         width: 55px;
         height: 55px;
-        font-size: 16px;
     }
 
 }
