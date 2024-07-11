@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuLinks = document.querySelectorAll('.mobile-menu-list');
   
   const orderBtns = document.querySelectorAll('.header-link-btn, .mobile-menu-order-btn');
+  const body = document.querySelector('body');
 
 
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuBtn.addEventListener('click', () => {
       
       mobileMenu.classList.add('open');
+      body.classList.add('no-scroll')
       
     });
   }
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.addEventListener('click', () => {
       
       mobileMenu.classList.remove('open');
+      body.classList.remove('no-scroll')
       
     });
   }
@@ -54,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target.tagName === 'A') {
         
         mobileMenu.classList.remove('open');
-        
+        body.classList.remove('no-scroll')
       }
     });
   }
