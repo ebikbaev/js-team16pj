@@ -61,6 +61,10 @@ input {
   padding-right: 5px;
   margin: 0 auto;
 }
+
+.no-scroll {
+  overflow-y: hidden;
+}
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
