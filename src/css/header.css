@@ -5,6 +5,10 @@
   left: 0;
 }
 
+.relative {
+  position: relative;
+}
+
 .page-navigation {
   display: flex;
   justify-content: space-between;
@@ -49,6 +53,19 @@
   right: 0;
   stroke: #fafafa;
 }
+.languages-container {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .languages {
+    position: relative;
+    top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}
 
 /* tablet */
 @media screen and (min-width: 768px) {
@@ -58,7 +75,7 @@
     align-items: center;
   }
 
-  .header-menu-btn {
+  .header-menu-btn, .language-btn {
     color: #fafafa;
     margin-bottom: 18px;
     line-height: normal;
@@ -69,7 +86,7 @@
     text-decoration-skip-ink: none;
   }
 
-  .header-list-navigation {
+  .header-list-navigation, .languages {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +115,7 @@
     color: #fafafa;
   }
 
-  .nav-list {
+  .nav-list, .languages .item {
     border-bottom: 2px solid transparent;
     transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,7 +124,10 @@
 
   .nav-list:hover,
   .nav-list:focus,
-  .nav-list:active {
+  .nav-list:active,
+  .languages .item:hover,
+  .languages .item:focus,
+  .languages .item:active {
     color: #ed3b44;
     /* color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     border-bottom: 2px solid #ed3b44;
@@ -115,6 +135,14 @@
 
   .mobile-menu-btn {
     display: none;
+  }
+  .languages-container {
+    position: absolute;
+    top: 0;
+    right: 180px;
+    display: block;
+    width: 90px;
+    text-align: center;
   }
 }
 
@@ -182,6 +210,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .languages-container {
+    right: 230px;
+  }
+}
+
 .mobile-menu-content {
   flex-direction: column;
   justify-content: space-between;
@@ -223,7 +257,7 @@
   display: block;
   letter-spacing: -0.02em;
   border-radius: 60px;
-  margin-top: 140px;
+  margin-top: 120px;
   padding: 14px 31px;
   width: 164px;
   height: 45px;
@@ -234,7 +268,7 @@
   font-weight: 500;
   line-height: 16.94px;
   letter-spacing: -0.02em;
-  text-align: left;
+  text-align: center;
   color: #fafafa;
 }
 

@@ -1,5 +1,9 @@
+import * as languageService from './languages';
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.header-menu-btn');
+  const languageBtn = document.querySelector('.language-btn');
+  const languageList = document.querySelector('.languages')
   const desktopMenu = document.querySelector('.header-list-navigation');
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -8,6 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const orderBtns = document.querySelectorAll('.header-link-btn, .mobile-menu-order-btn');
   const body = document.querySelector('body');
+  const languageLinks = document.querySelectorAll('.languages .link')
+
+  const savedLang = languageService.getLanguageCode();
+  document.documentElement.lang = savedLang;
+
+  languageService.loadTranslations(savedLang).then(translations => {
+    languageService.translatePage(translations);
+  });
+
+  languageLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const selectedLang = event.target.getAttribute('data-lang');
+      languageService.saveLanguageCode(selectedLang);
+      window.location.href = `/${selectedLang}`;
+    });
+  });
 
 
 
@@ -32,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
       
     });
   }
+
+  languageBtn.addEventListener('click', () => {
+      
+    languageList.classList.toggle('visually-hidden');
+    languageList.classList.toggle('is-hidden');
+    
+  });
 
   
   if (mobileMenuBtn && mobileMenu) {
