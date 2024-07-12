@@ -54,7 +54,7 @@
 
 .swiper-slide.reviewers-card.scrollable::-webkit-scrollbar {
   width: 8px;
-  scrollbar-gutter: auto;
+  /* scrollbar-gutter: auto; */
 }
 
 .swiper-slide.reviewers-card.scrollable::-webkit-scrollbar-track {
