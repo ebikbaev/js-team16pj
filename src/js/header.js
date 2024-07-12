@@ -16,17 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const savedLang = languageService.getLanguageCode();
   document.documentElement.lang = savedLang;
-
-  languageService.loadTranslations(savedLang).then(translations => {
-    languageService.translatePage(translations);
-  });
+  const translations = languageService.loadTranslations(savedLang);
+  languageService.translatePage(translations);
 
   languageLinks.forEach(link => {
     link.addEventListener('click', (event) => {
-      event.preventDefault();
       const selectedLang = event.target.getAttribute('data-lang');
       languageService.saveLanguageCode(selectedLang);
-      window.location.href = `/${selectedLang}`;
+      location.reload();
     });
   });
 
@@ -64,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
-      
+
       mobileMenu.classList.add('open');
       body.classList.add('no-scroll')
       
