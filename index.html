@@ -13,68 +13,79 @@
     <script type="module" crossorigin src="/js-team16pj/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/js-team16pj/assets/vendor-CBq3KAmY.js">
     <link rel="stylesheet" crossorigin href="/js-team16pj/assets/vendor-RR4QmIjG.css">
-    <link rel="stylesheet" crossorigin href="/js-team16pj/assets/index-C7E5Bp9i.css">
+    <link rel="stylesheet" crossorigin href="/js-team16pj/assets/index-DQZ6d0_4.css">
   </head>
   <body>
     <header class="page-header" id="page-header">
   <div class="container">
-    <nav class="page-navigation">
-      <a class="header-logo" href="./index.html" aria-label="Logo">
-        <div class="header-imges">
-          <img
-            src="/js-team16pj/assets/header-img-1x-DEOtYWJs.png"
-            srcset="/js-team16pj/assets/header-img-1x-DEOtYWJs.png 1x, /js-team16pj/assets/header-img-2x-BlpHZBme.png"
-            alt="Logo"
-            class="header-logo-img"
-          />
-          <p class="header-text">jefferson*</p>
+    <div class="relative">
+      <nav class="page-navigation">
+        <a class="header-logo" href="./index.html" aria-label="Logo">
+          <div class="header-imges">
+            <img
+              src="/js-team16pj/assets/header-img-1x-DEOtYWJs.png"
+              srcset="/js-team16pj/assets/header-img-1x-DEOtYWJs.png 1x, /js-team16pj/assets/header-img-2x-BlpHZBme.png"
+              alt="Logo"
+              class="header-logo-img"
+            />
+            <p class="header-text">jefferson*</p>
+          </div>
+        </a>
+        <div class="header-menu">
+          <button
+            type="button"
+            class="header-menu-btn"
+            aria-label="Menu list button"
+            data-translate="textMenu"
+          >
+            Menu
+          </button>
+          <ul class="header-list-navigation visually-hidden is-hidden">
+            <li class="nav-list">
+              <a data-translate="textAboutMe" class="nav-link" href="#about-me" aria-label="Navigation link"
+                >About me</a
+              >
+            </li>
+            <li class="nav-list">
+              <a data-translate="textBenefits" class="nav-link" href="#benefits" aria-label="Navigation link"
+                >Benefits</a
+              >
+            </li>
+            <li class="nav-list">
+              <a data-translate="textProjects" class="nav-link" href="#projects" aria-label="Navigation link"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#faq-section" aria-label="Navigation link">FAQ</a>
+            </li>
+          </ul>
         </div>
-      </a>
-      <div class="header-menu">
-        <button
-          type="button"
-          class="header-menu-btn"
-          aria-label="Menu list button"
+        <a
+          class="header-link-btn"
+          href="#work-together"
+          aria-label="Order button link"
+          data-translate="textWorkTogether"
+          >Order the project</a
         >
-          Menu
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Mobile menu button"
+        >
+          <svg class="mobile-menu-btn-icon" width="28" height="28">
+            <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-burger"></use>
+          </svg>
         </button>
-        <ul class="header-list-navigation visually-hidden is-hidden">
-          <li class="nav-list">
-            <a class="nav-link" href="#about-me" aria-label="Navigation link"
-              >About me</a
-            >
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#benefits" aria-label="Navigation link"
-              >Benefits</a
-            >
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#projects" aria-label="Navigation link"
-              >Projects</a
-            >
-          </li>
-          <li class="nav-list">
-            <a class="nav-link" href="#faq" aria-label="Navigation link">FAQ</a>
-          </li>
+      </nav>
+      <div class="languages-container">
+        <button type="button" class="language-btn" data-translate="languageCode">Eng</button>
+        <ul class="languages visually-hidden is-hidden">
+          <li class="item"><a href="#" data-lang="en" class="link">English</a></li>
+          <li class="item"><a href="#" data-lang="ua" class="link">Українська</a></li>
         </ul>
       </div>
-      <a
-        class="header-link-btn"
-        href="#work-together"
-        aria-label="Order button link"
-        >Order the project</a
-      >
-      <button
-        class="mobile-menu-btn"
-        type="button"
-        aria-label="Mobile menu button"
-      >
-        <svg class="mobile-menu-btn-icon" width="28" height="28">
-          <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-burger"></use>
-        </svg>
-      </button>
-    </nav>
+    </div>
   </div>
 
   <div
@@ -91,15 +102,20 @@
       </button>
       <div class="mobile-menu-content">
         <ul class="mobile-menu-numbe">
-          <li><a class="mobile-menu-list" href="#about-me">About me</a></li>
-          <li><a class="mobile-menu-list" href="#benefits">Benefits</a></li>
-          <li><a class="mobile-menu-list" href="#projects">Projects</a></li>
+          <li><a data-translate="textAboutMe" class="mobile-menu-list" href="#about-me">About me</a></li>
+          <li><a data-translate="textBenefits" class="mobile-menu-list" href="#benefits">Benefits</a></li>
+          <li><a data-translate="textProjects" class="mobile-menu-list" href="#projects">Projects</a></li>
           <li><a class="mobile-menu-list" href="#faq-section">FAQ</a></li>
+        </ul>
+        <ul class="languages">
+          <li class="item"><a href="#" data-lang="en" class="link">ENG</a></li>
+          <li class="item"><a href="#" data-lang="ua" class="link">УКР</a></li>
         </ul>
         <a
           class="mobile-menu-order-btn"
           href="#work-together"
           aria-label="Order the project link"
+          data-translate="textWorkTogether"
           >Order the project</a
         >
       </div>
@@ -109,10 +125,10 @@
 
     <section class="hero-section" id="hero-section">
   <div class="hero-container container">
-    <h1 class="hero-title">
+    <h1 class="hero-title" data-translate="titleH1">
       <span class="title-line">Hello.</span>
-    <span class="title-line">I'm Fullstack developer</span>
-    <span class="title-line">Lloyd Jefferson.</span>
+      <span class="title-line">I'm Fullstack developer</span>
+      <span class="title-line">Lloyd Jefferson.</span>
   </h1>
   <div class="social-links">
     <ul class="social-list">
@@ -140,7 +156,7 @@
     <h2 class="about-me-title visually-hidden">About me</h2>
     <div class="about-me-descr">
       <div class="about-me-descr-text-box">
-        <p class="about-me-descr-text">
+        <p class="about-me-descr-text" data-translate="textAboutMeDecsription">
           I work with people all over the world to create impressive and
           <span class="accent-color-one">functional</span>
           <span class="accent-color-two">websites</span> that reflect each
@@ -174,7 +190,7 @@
         <li class="about-me-info-item ac">
           <h3 class="about-me-info-header ac-header">
             <button type="button" class="about-me-info-btn ac-trigger">
-              About me
+              <span data-translate="textAboutMe">About me</span>
               <span class="about-me-info-btn-block">
                 <svg class="about-me-info-btn-icon" aria-label="trigger icon">
                   <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -184,7 +200,7 @@
           </h3>
           <div class="about-me-info-text-block ac-panel">
             <ul class="about-me-info-text-list">
-              <li class="about-me-info-text-item">
+              <li class="about-me-info-text-item" data-translate="textAboutMeInfo">
                 <p>
                   I am Lloyd Jefferson, a talented programmer with extensive
                   expertise in software development. I have an understanding of
@@ -214,7 +230,7 @@
         <li class="about-me-info-item ac">
           <h3 class="about-me-info-header ac-header">
             <button type="button" class="about-me-info-btn ac-trigger">
-              Role
+              <span data-translate="textRole">Role</span> 
               <span class="about-me-info-btn-block">
                 <svg class="about-me-info-btn-icon" aria-label="trigger icon">
                   <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -233,7 +249,7 @@
         <li class="about-me-info-item ac">
           <h3 class="about-me-info-header ac-header">
             <button type="button" class="about-me-info-btn ac-trigger">
-              Education
+              <span data-translate="textEducation">Education</span>
               <span class="about-me-info-btn-block">
                 <svg class="about-me-info-btn-icon" aria-label="trigger icon">
                   <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -283,7 +299,7 @@
     <!--Benefits-->
 <section class="benefits" id="benefits">
   <div class="container benefits-container">
-    <h2 class="benefits-title">Benefits of working with me</h2>
+    <h2 class="benefits-title" data-translate="titleBenefits">Benefits of working with me</h2>
     <div class="benefits-list-btn-container">
       <ul class="benefits-list">
         <li class="benefits-item">
@@ -292,8 +308,8 @@
               <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-user"></use>
             </svg>
           </div>
-          <h3 class="benefits-subtitle">Expertise</h3>
-          <p class="benefits-item-text">
+          <h3 class="benefits-subtitle" data-translate="titleExpertise">Expertise</h3>
+          <p class="benefits-item-text" data-translate="textExpertise">
             As a highly experienced developer, I have deep knowledge of
             programming and website development.
           </p>
@@ -304,8 +320,8 @@
               <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-message-chat-circle"></use>
             </svg>
           </div>
-          <h3 class="benefits-subtitle">Communication</h3>
-          <p class="benefits-item-text">
+          <h3 class="benefits-subtitle" data-translate="titleCommunication">Communication</h3>
+          <p class="benefits-item-text" data-translate="textCommunication">
             Understanding your needs and wants is my priority and I am always
             open to discussions and corrections.
           </p>
@@ -316,8 +332,8 @@
               <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-brush"></use>
             </svg>
           </div>
-          <h3 class="benefits-subtitle">Art</h3>
-          <p class="benefits-item-text">
+          <h3 class="benefits-subtitle" data-translate="titleArt">Art</h3>
+          <p class="benefits-item-text" data-translate="textArt">
             Thanks to my creative nature, I am ready to accept challenges and
             help you bring your ideas to life.
           </p>
@@ -328,20 +344,20 @@
               <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-hourglass"></use>
             </svg>
           </div>
-          <h3 class="benefits-subtitle">Urgent execution</h3>
-          <p class="benefits-item-text">
+          <h3 class="benefits-subtitle" data-translate="titleUrgentExecution">Urgent execution</h3>
+          <p class="benefits-item-text" data-translate="textUrgentExecution">
             I understand how important time is to you. Ready to work quickly and
             efficiently, without reducing the quality of work.
           </p>
         </li>
       </ul>
-      <a class="benefits-order-btn" href="#work-together">Order the project</a>
+      <a class="benefits-order-btn" href="#work-together" data-translate="textWorkTogether">Order the project</a>
     </div>
   </div>
 </section>
 
     <section class="container projects" id="projects">
-  <h2 class="projects-title">Projects</h2>
+  <h2 class="projects-title" data-translate="textProjects">Projects</h2>
   <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -359,14 +375,14 @@
               </li>
               <li class="projects-item"><p class="projects-text">#git</p></li>
             </ul>
-            <h3 class="projects-head-text">
+            <h3 class="projects-head-text" data-translate="textProjectSection">
               Programming Across Borders: Ideas, Technologies, Innovations
             </h3>
             <a
               class="projects-button"
               href="https://github.com/ebikbaev/js-team16pj"
               target="_blank"
-              >See project</a
+              data-translate="textSeeProject">See project</a
             >
           </div>
           <div class="img-container">
@@ -405,14 +421,14 @@
               </li>
               <li class="projects-item"><p class="projects-text">#git</p></li>
             </ul>
-            <h3 class="projects-head-text">
+            <h3 class="projects-head-text" data-translate="textProjectSection">
               Programming Across Borders: Ideas, Technologies, Innovations
             </h3>
             <a
               class="projects-button"
               href="https://github.com/ebikbaev/js-team16pj"
               target="_blank"
-              >See project</a
+              data-translate="textSeeProject">See project</a
             >
           </div>
           <div class="img-container">
@@ -452,14 +468,14 @@
               </li>
               <li class="projects-item"><p class="projects-text">#git</p></li>
             </ul>
-            <h3 class="projects-head-text">
+            <h3 class="projects-head-text" data-translate="textProjectSection">
               Programming Across Borders: Ideas, Technologies, Innovations
             </h3>
             <a
               class="projects-button"
               href="https://github.com/ebikbaev/js-team16pj"
               target="_blank"
-              >See project</a
+              data-translate="textSeeProject">See project</a
             >
           </div>
           <div class="img-container">
@@ -509,7 +525,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            What programming languages are most often used in your project?
+            <span data-translate="faqQuestion1">What programming languages are most often used in your project?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -517,7 +533,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer1">
           In the field of web development, there are various technologies and
           programming languages. Typically, this includes a combination of
           frontend (client side) and backend (server side) languages.
@@ -526,7 +542,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            What are the deadlines for the project?
+            <span data-translate="faqQuestion2">What are the deadlines for the project?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -534,7 +550,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer2">
           The terms of project implementation depend to a large extent on a
           number of factors, such as the scope of the project, its complexity,
           and the availability of resources. Determining exact deadlines is a
@@ -545,7 +561,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            What payment methods do you accept?
+            <span data-translate="faqQuestion3">What payment methods do you accept?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -553,7 +569,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer3">
           Payment through credit and debit cards such as Visa, MasterCard,
           specialized electronic payment systems such as PayPal, as well as
           payments in cryptocurrencies such as Bitcoin, Ethereum and others.
@@ -562,7 +578,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            How can I contact you?
+            <span data-translate="faqQuestion4">How can I contact you?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -570,7 +586,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer4">
           You can contact us via email, phone, or through our website's contact
           form. We strive to respond to all inquiries within 24 hours.
         </p>
@@ -578,7 +594,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            Do you provide support after project completion?
+            <span data-translate="faqQuestion5">Do you provide support after project completion?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -586,7 +602,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer5">
           Yes, we offer ongoing support and maintenance packages to ensure your
           project remains up-to-date and functional.
         </p>
@@ -594,7 +610,7 @@
       <li class="faq-section-list-item ac">
         <h3 class="faq-section-list-item-title ac-header">
           <button type="button" class="faq-section-list-item-btn ac-trigger">
-            What is your project development process?
+            <span data-translate="faqQuestion6">What is your project development process?</span>
             <span class="faq-section-list-item-btn-block">
               <svg class="faq-section-list-item-icon">
                 <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-trigger"></use>
@@ -602,7 +618,7 @@
             </span>
           </button>
         </h3>
-        <p class="faq-section-list-item-text ac-panel">
+        <p class="faq-section-list-item-text ac-panel" data-translate="faqAnswer6">
           Our development process includes initial consultation, planning,
           design, development, testing, and deployment. We follow an agile
           methodology to ensure flexibility and timely delivery.
@@ -779,7 +795,7 @@
 
     <section>
   <div class="container reviews">
-    <h2 class="reviews-header">REVIEWS</h2>
+    <h2 class="reviews-header" data-translate="titleReviews">REVIEWS</h2>
     <div class="swiper-reviews">
       <ul class="reviewers-list swiper-wrapper"></ul>
       <div class="review-buttons-wrapper">
@@ -809,16 +825,16 @@
             height="70"
             class="work-together-logo"
       />
-      <h2 class="work-together-title">Let’s <span class="red-text">work</span> together</h2>
+      <h2 class="work-together-title" data-translate="titleWorkTogether">Let’s <span class="red-text">work</span> together</h2>
     </div>
     <form class="work-together-form" id="work-together-form">
       <div class="form-element" id="email-container">
         <input type="email" name="email" id="email" class="inp" required pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com">
       </div>
       <div class="form-element">
-        <input type="text" name="comment" id="comment" class="inp" required placeholder="comments">
+        <input type="text" name="comment" id="comment" class="inp" data-translate="comments" required placeholder="comments">
       </div>
-      <button type="submit" class="btn-send">Send</button>
+      <button type="submit" class="btn-send" data-translate="textSend">Send</button>
     </form>
     <ul class="work-together-contacts flex">
       <li class="work-together-contact"><a class="work-together-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
@@ -834,8 +850,8 @@
         <use href="/js-team16pj/assets/sprite-jGJayH03.svg#icon-close"></use>
       </svg>
     </button>
-    <h4 class="success-title">Thank you for your interest in cooperation!</h4>
-    <p class="success-message">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    <h4 class="success-title" data-translate="titleSuccessMessage">Thank you for your interest in cooperation!</h4>
+    <p class="success-message" data-translate="textSuccessMessage">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
   </div>
 </div>
   </body>
