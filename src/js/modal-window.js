@@ -9,9 +9,9 @@ function renderSuccessMessage(title, message) {
     refs.successText.textContent = message;
 }
 
-export function showModalWindow(title, message) {
+export function showModalWindow() {
     refs.backdrop.classList.remove('hidden')
-    renderSuccessMessage(title, message)
+    // renderSuccessMessage(title, message)
 }
 
 function hideModalWindow() {

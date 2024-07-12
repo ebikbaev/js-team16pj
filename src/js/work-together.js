@@ -12,13 +12,14 @@ const refs = {
 
 refs.form.addEventListener('submit', async (ev) => {
     ev.preventDefault()
-    const email = ev.target.elements['email'].value;
-    const comment = ev.target.elements['comment'].value;
+    const email = ev.target.elements['email'].value.trim();
+    const comment = ev.target.elements['comment'].value.trim();
 
     try {
         const response = await addRequestCooperation(email, comment);
         refs.form.reset();
-        modal.showModalWindow(response.title, response.message);
+        // modal.showModalWindow(response.title, response.message);
+        modal.showModalWindow();
         refs.emailContainer.classList.remove('success');
     } catch (error) {
         iziToast.error({
