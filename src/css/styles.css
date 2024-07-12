@@ -14,7 +14,7 @@
 @import url('./projects.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
-@import url('./modern-normalize.css');
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
 
 @font-face {
   font-family: 'InterTightMedium';
