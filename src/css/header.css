@@ -109,7 +109,7 @@
   .nav-list:focus,
   .nav-list:active {
     color: #ed3b44;
-    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     border-bottom: 2px solid #ed3b44;
   }
 
@@ -132,12 +132,11 @@
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   visibility: hidden;
   opacity: 0;
-  background-image: url("../img/header/Glass effect 1.png");
+  background-image: url('../img/header/Glass effect 1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  }
-
+}
 
 .mobile-menu-close {
   display: flex;
@@ -174,7 +173,6 @@
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .mobile-menu {
     object-fit: fill;
-    
   }
 }
 
@@ -187,7 +185,6 @@
 .mobile-menu-content {
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .mobile-menu-numbe {
