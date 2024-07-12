@@ -1,15 +1,15 @@
+import en from '../languages/en.json';
+import ua from '../languages/ua.json';
+
 export function saveLanguageCode(langugageCode) {
     localStorage.setItem('language', langugageCode)
 }
-
 export function getLanguageCode() {
      return localStorage.getItem('language') || 'en'
 }
   
 export function loadTranslations(lang) {
-  return fetch(`./languages/${lang}.json`)
-    .then(response => response.json())
-    .catch(error => console.error('Error loading translations:', error));
+  return lang == "ua" ? ua : en;
 }
   
 export function translatePage(translations) {
